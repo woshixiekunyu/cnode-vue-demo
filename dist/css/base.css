@@ -1,0 +1,22 @@
+html,body,h1,h2,h3,h4,h5,h6,ul,li,p{
+	margin: 0;
+	padding: 0;
+}
+a{text-decoration: none;}
+i{font-style: none;}
+ul,li{list-style: none;}
+html,body{width:100%;color:#5D656B;background-color: #fff;}
+html{
+	font-size: 625%;
+}
+body{
+	font-size: 0.12rem;
+}
+header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: flex;
+	text-align: center;
+}
+
