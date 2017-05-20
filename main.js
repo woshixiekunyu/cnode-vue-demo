@@ -12,6 +12,9 @@ import VueRouter from 'vue-router';
 Vue.use(VueRouter)
 var xmain = require('./component/xmain.vue')
 var ask_list = require('./component/ask_list.vue')
+var share_list = require('./component/share_list.vue')
+var job_list = require('./component/job_list.vue')
+var good_list = require('./component/good_list.vue')
 var ask_Detail = require('./component/ask_Detail.vue')
 
 var router = new VueRouter({
@@ -21,6 +24,18 @@ var router = new VueRouter({
 		children:[{
 					path:'ask_list',
 					component:ask_list,
+					
+				},{
+					path:'share_list',
+					component:share_list,
+					
+				},{
+					path:'job_list',
+					component:job_list,
+					
+				},{
+					path:'good_list',
+					component:good_list,
 					
 				}]
 		},{

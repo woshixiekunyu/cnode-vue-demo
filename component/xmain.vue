@@ -61,7 +61,16 @@
 				}
 //				window.location.href=""
 			});
-			$('header>span').eq(0).addClass('active').siblings().removeClass('active').fadeToggle('fast','swing')
+			console.log(window.location.hash.split('/')[2])
+			if(window.location.hash.split('/')[2] == 'ask_list'){
+				$('header>span').eq(0).addClass('active').siblings().removeClass('active').fadeToggle('fast','swing')
+			}else if(window.location.hash.split('/')[2] == 'share_list'){
+				$('header>span').eq(1).addClass('active').siblings().removeClass('active').fadeToggle('fast','swing')
+			}else if(window.location.hash.split('/')[2] == 'job_list'){
+				$('header>span').eq(2).addClass('active').siblings().removeClass('active').fadeToggle('fast','swing')
+			}else if(window.location.hash.split('/')[2] == 'good_list'){
+				$('header>span').eq(3).addClass('active').siblings().removeClass('active').fadeToggle('fast','swing')
+			}
 			
 			$('header').parent().on('click',function(){
 				this.isLogin = false

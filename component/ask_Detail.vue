@@ -22,6 +22,7 @@
 		<main>
 			<div class="title">
 				<h3>问题:{{title}}</h3>
+				<span>作者：{{author}}</span>
 				<span>发表时间：<i class="timess"></i></span>
 			</div>
 			
@@ -40,7 +41,8 @@
 				time:'',
 				loginVal:'登录',
 				isLogin:false,
-				content:''
+				content:'',
+				author:''
 			}
 		},
 		methods:{
@@ -72,6 +74,7 @@
 //					self.time = data.data.create_at;
 					$('.timess').html(self.time)
 					self.content = data.data.content;
+					self.author = data.data.author.loginname
 				}
 			})
 			console.log($('.area'))
@@ -195,8 +198,12 @@
 			}
 			
 			article{
+				min-height: 3rem;
+				border-bottom: 1px solid #ccc;
 				p{
-					text-align: center;
+					text-align: left;
+					line-height: 0.3rem;
+					padding: 0.2rem 0.3rem;
 				}
 			}
 		}

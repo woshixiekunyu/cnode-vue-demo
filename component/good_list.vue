@@ -10,8 +10,7 @@
 				<li v-for="list in lists" @click="goDetail(list.id)">
 					<h3><i></i>{{list.title}}</h3>
 					<p>{{list.content}}</p>
-					<span>评论:{{list.reply_count}}</span>
-					<span>read:{{list.visit_count}}</span>
+					<!--<span>作者：{{list.author.loginname}}</span>-->
 					<span v-times class="time">time:{{list.create_at}}</span>
 
 				</li>
@@ -42,7 +41,7 @@
 					//				dataType:'json',
 					data: {
 						page: self.page,
-						tab: 'ask',
+						tab: 'good',
 						mdrender:false,
 						limit:20
 					},
@@ -61,7 +60,7 @@
 				});
 			},
 			goDetail(id) {
-				window.location.href = "#/ask_Detail/" + id
+				window.location.href = "#/good_Detail/" + id
 			},
 			searchSameVal(){
 				var $len = $('main>ul>li').length;
@@ -73,7 +72,6 @@
 		mounted() {
 			var self = this;
 			this.lookMore();
-			
 //			console.log(window.location)
 			window.onscroll = function(e){
 				var scrollTop = window.scrollY;
@@ -154,11 +152,7 @@
 				max-height: 1rem;
 				padding: 0 10px;
 				border-bottom: 1px solid #ccc;
-				
 				overflow: hidden;
-				box-shadow:  0 3px 0 #eee;
-				margin-bottom: 10px;
-				background-color: #ccc;
 				h3 {
 					font-size: 0.16rem;
 					line-height: 0.3rem;
