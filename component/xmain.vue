@@ -101,6 +101,7 @@
 				i{background: url('image/icon/icon-userMenu.png') no-repeat;}
 			}
 			&:nth-child(6){
+				flex: 1.5;
 				border-radius: 50%;
 				position: relative;
 				i{background: url('image/icon/icon-loginMenu.png') no-repeat;}

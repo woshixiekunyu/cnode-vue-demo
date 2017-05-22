@@ -1,0 +1,170 @@
+.ask_Detail header{
+	height: 40px;
+	/*background-color: greenyellow;*/
+	display: flex;
+
+	background-color: purple;
+	z-index: 1000;
+	
+	
+}
+.ask_Detail header div i{
+		margin: 10px auto;
+	}
+	
+.ask_Detail header div:nth-child(1){
+	flex: 1;
+	height: 40px;
+	background-color: blueviolet;
+	
+}
+.ask_Detail header div:nth-child(1) i{
+	/*margin-top: 12px;*/
+	display: block;
+	width: 24px;
+	height: 24px;
+	background: url('../../public/image/icon/icon-jiantou.png') no-repeat;
+}
+.ask_Detail header div:nth-child(2){
+	flex: 6.5;
+}
+.ask_Detail header div:nth-child(3){
+	flex: 2;
+	position: relative;
+	border-radius: 50%;
+	
+}
+.ask_Detail header div:nth-child(3) i{
+	/*margin-top: 8px;*/
+	width: 24px;
+	height: 24px;
+	display: block;
+	background: url('../../public/image/icon/icon-loginMenu.png') no-repeat;
+	
+}
+
+.ask_Detail header div:nth-child(3) ul{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+.ask_Detail header div:nth-child(3) ul li{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	/*padding: 0 0.1rem;*/
+	border: 1px solid purple;
+	background-color: #fff;
+	border-radius: 50%;
+}
+.ask_Detail nav{
+	margin-top: 40px;
+	height:30px;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+}
+.ask_Detail nav>span{
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	background: url('../../public/image/icon/icon-areaTips.png') no-repeat;
+	text-align: center;
+}
+.ask_Detail main{
+	width: 100%;
+	word-wrap: break-word;
+}
+.ask_Detail main .title{
+	width: 100%;
+	border-bottom: 1px solid green;
+
+}
+.ask_Detail main .title h3{
+	padding: 5px 10px;
+	text-indent: 0.3rem;
+	line-height: 0.3rem;
+}
+.ask_Detail main .title span{
+	float: right;
+	/*margin-right: 0.15rem;*/
+	line-height: 0.2rem;		
+}
+	
+.ask_Detail main article{
+	width: 100%;
+	min-height: 3rem;
+	border-bottom: 1px solid green;
+}
+.ask_Detail main article .markdown-text{
+	padding: 0.2rem 0.3rem;
+}
+.ask_Detail main article .markdown-text p{
+	text-align: left;
+	line-height: 0.3rem;
+	
+}
+.ask_Detail main article .markdown-text img{
+	width: 100%;
+}
+
+.ask_Detail main .discuss h3{
+	line-height: 0.3rem;
+	/*text-indent: 0.2rem;*/
+	border-bottom: 1px solid #ccc;
+	margin-left: 0.2rem;
+}
+.ask_Detail main .discuss h3 span{
+	margin-left:0.8rem ;
+}
+.ask_Detail main .discuss .discContent>ul>li{
+	border-bottom: 1px solid #ccc;
+
+
+	padding: 0.1rem;
+	position: relative;
+	padding-bottom: 0.3rem;
+}
+.ask_Detail main .discuss .discContent{
+	min-height: 0.6rem;
+}
+.ask_Detail main .discuss .discContent .userinfor{
+	
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+.ask_Detail main .discuss .discContent .userinfor img{
+	width: 0.5rem;
+	border-radius: 50%;
+
+}
+.ask_Detail main .discuss .discContent .content{
+	width: 60%;
+	float: left;
+	word-wrap:break-all;
+	margin-left: 0.2rem;
+	
+}
+
+.ask_Detail main .discuss .discContent .content .markdown-text p{
+	line-height: 0.2rem;
+	text-align: left;
+	
+}
+.ask_Detail main .discuss .discContent .content img{
+	width: 100%;
+}
+.ask_Detail main .discuss .discContent .content>i{
+	line-height: 0.3rem;
+	color:red;
+	position: absolute;
+	right: 0.4rem;
+	bottom: 0;
+}
+.loginBg{
+	background-color: #fff;
+	transition: all 1s;
+}

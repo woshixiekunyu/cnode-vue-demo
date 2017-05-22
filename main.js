@@ -7,6 +7,8 @@ import $ from 'jquery';
 window.$ = $;
 //引入base.css
 require('./dist/css/base.css')
+require('./dist/css/ask_Detail.css')
+import './dist/css/share_Detail.scss'
 //引入路由
 import VueRouter from 'vue-router';
 Vue.use(VueRouter)
@@ -16,6 +18,7 @@ var share_list = require('./component/share_list.vue')
 var job_list = require('./component/job_list.vue')
 var good_list = require('./component/good_list.vue')
 var ask_Detail = require('./component/ask_Detail.vue')
+var share_Detail = require('./component/share_Detail.vue')
 
 var router = new VueRouter({
 	routes:[{
@@ -41,6 +44,10 @@ var router = new VueRouter({
 		},{
 			path:'/ask_Detail/:id',
 			component:ask_Detail
+			
+		},{
+			path:'/share_Detail/:id',
+			component:share_Detail
 			
 		},{
 			path:'/',
