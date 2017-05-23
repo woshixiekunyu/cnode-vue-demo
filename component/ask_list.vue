@@ -5,7 +5,7 @@
 			<ul>
 				<li v-for="list in lists" @click="goDetail(list.id)">
 					<div class="userImg">
-						<img :src="list.author.avatar_url" alt="" />
+						<img :src="!getIsImg?list.author.avatar_url:''" v-show="!getIsImg" alt="" />
 					</div>
 					<div class="list_content">
 						<h3><i></i>{{list.title}}</h3>
@@ -30,6 +30,12 @@
 
 				src:''
 			}
+		},
+		computed:{
+			getIsImg:function(){
+				return this.$store.state.isImg
+			},
+
 		},
 		methods: {
 //			

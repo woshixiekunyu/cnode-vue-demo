@@ -1,10 +1,10 @@
 <template>
-	<div class="ask_Detail">
+	<div class="job_Detail">
 		<header>
 			<div class="back" @click="back()">
 				<i class="icon icon-jiantou"></i>
 			</div>
-			<div></div>
+			<div><span></span></div>
 			
 			<div  :class="{loginBg:isLogin}">
 				<i @click="login(2)" class="icon icon-loginMenu"></i>
@@ -25,7 +25,7 @@
 				<span>发表时间：<i class="timess"></i></span>
 			</div>
 			
-			<article v-html="content" v-img>
+			<article v-html="content">
 			</article>
 			
 			<div class="discuss">
@@ -50,7 +50,7 @@
 </template>
 
 <script>
-//	require('./dist/css/ask_Detail.scss')
+
 	export default {
 		data(){
 			return {
@@ -71,7 +71,7 @@
 			},
 			back(){
 				
-				var hrefs = location.hash.split('/')[1].substr(0,3);
+				var hrefs = location.hash.split('/')[1].substr(0,4);
 				window.location.href="#/xmain/"+hrefs+"_list"
 			},
 		},
@@ -89,12 +89,10 @@
 			$.ajax({
 				url:'https://cnodejs.org/api/v1/topic/'+params,
 				type:'GET',
-				
 				success:function(data){
 					console.log(data)
 					self.title = data.data.title;
 					self.time = data.data.create_at.substr(0,10)
-//					self.time = data.data.create_at;
 					$('.timess').html(self.time)
 					self.content = data.data.content;
 					self.author = data.data.author.loginname
@@ -103,7 +101,6 @@
 					if(data.data.replies.length>0){
 						self.disnum = self.discContent.length
 					}
-//					self.disnum = self.disContent.length
 				}
 			})
 			console.log($('.area'))
@@ -120,7 +117,7 @@
 				$(el).css('top',$('header').innerHeight())
 			},
 			areaTips(el){
-				var hrefss = location.hash.split('/')[1].substr(0,3)+'_list'
+				var hrefss = location.hash.split('/')[1].substr(0,4)+'_list'
 				$(el).html(hrefss).css('fontSize',16);
 				$(el).bind('touchstart',function(e){
 					e.target.style.borderBottom = "1px solid #ccc"
@@ -131,25 +128,7 @@
 					e.target.style.border = 'none'
 				})
 			},
-			img:{
-				bind:function(){
-					$('body').on('click','img',function(){
-	//					console.log(e.target)
-						console.log($(this))
-						var $cloneImg = $(this).clone().css('position','fixed')
-						.css('left',0).css('top',0).css('width','100%').css('height','100%').appendTo($('body'));
-						$cloneImg.on('click',function(e){
-							console.log(e)
-								$($cloneImg).remove()
-							e.stopPropagation();
-						})
-	
-					})
-				}
-			}
+			
 		}
 	}
 </script>
-<style>
-	
-</style>

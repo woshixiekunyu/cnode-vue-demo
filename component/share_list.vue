@@ -1,12 +1,10 @@
 <template>
 	<div>
-		
 		<main>
-
 			<ul>
 				<li v-for="list in lists" @click="goDetail(list.id)">
 					<div class="userImg">
-						<img :src="list.author.avatar_url" alt="" />
+						<img :src="!getIsImg?list.author.avatar_url:''" v-show="!getIsImg" alt="" />
 					</div>
 					<div class="list_content">
 						<h3><i></i>{{list.title}}</h3>
@@ -27,12 +25,18 @@
 			return {
 				page: 1,
 				lists: [],
+				src:'',
 
-				src:''
 			}
 		},
+		computed:{
+			getIsImg:function(){
+				return this.$store.state.isImg
+			},
+
+		},
 		methods: {
-//			
+			
 			lookMore() {
 				var self = this;
 //				console.log(this.page)
@@ -49,7 +53,7 @@
 					},
 					success(data) {
 						self.page++
-						console.log(data)
+//						console.log(data)
 						self.lists =self.lists.concat(data.data)
 						
 						window.onscroll = function(e){
@@ -68,6 +72,7 @@
 			
 		},
 		mounted() {
+//			console.log(this.getIsImg)
 			var self = this;
 			this.lookMore();
 			
@@ -80,6 +85,8 @@
 					self.lookMore()
 				}
 			}
+			
+			
 		},
 		directives: {
 			Li: function(el) {

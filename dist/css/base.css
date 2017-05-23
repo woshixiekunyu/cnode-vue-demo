@@ -19,6 +19,12 @@ header{
 	display: flex;
 	text-align: center;
 }
+body{
+	width: 100%;
+	
+}
+
+
 .clearfix::before,
 .clearfix::after{
 	display:block;

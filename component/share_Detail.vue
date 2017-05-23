@@ -10,7 +10,7 @@
 				<i @click="login(2)" class="icon icon-loginMenu"></i>
 				<ul v-show="isLogin" v-Ul>
 					<li>{{loginVal}}</li>
-					<li>关于</li>
+
 				</ul>
 			</div>
 			
@@ -34,7 +34,7 @@
 					<ul>
 						<li v-for="dis in disContent" class="clearfix">
 							<div class="userinfor">
-								<img :src="dis.author.avatar_url" alt=""/>
+								<img :src="!getIsImg?dis.author.avatar_url:''" v-show="!getIsImg" alt=""/>
 								<span>{{dis.author.loginname}}</span>
 							</div>
 							<div class="content">
@@ -63,6 +63,12 @@
 				disContent:'',
 				
 			}
+		},
+		computed:{
+			getIsImg:function(){
+				return this.$store.state.isImg
+			},
+
 		},
 		methods:{
 			login(){
@@ -98,7 +104,9 @@
 				}
 			})
 			console.log($('.area'))
-			
+			if(this.getIsImg){
+				this.getIsImg = false;
+			}
 			
 
 		},

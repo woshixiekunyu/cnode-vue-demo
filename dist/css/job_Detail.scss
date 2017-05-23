@@ -1,0 +1,213 @@
+.job_Detail{
+    &>header{
+        height: 40px;
+        width: 100%;
+        display: flex;
+        background-color: purple;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        div{
+            i{
+                margin: 10px auto;
+            }
+            &:nth-child(1){
+                flex: 1;
+                height: 40px;
+                background-color: blueviolet;
+                i{
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    background: url('../../public/image/icon/icon-jiantou.png') no-repeat;
+                }
+            }
+            &:nth-child(2){
+                flex: 7.5;
+            }
+            &:nth-child(3){
+                flex: 1.5;
+                
+                position: relative;
+                border-radius: 50%;
+                &>i{
+                    /*margin-top: 8px;*/
+                    width: 24px;
+                    height: 24px;
+                    display: block;
+                    background: url('../../public/image/icon/icon-loginMenu.png');
+                }
+                ul{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 100%;
+                    li{
+                        width: 100%;
+                        height: 24px;
+                        line-height: 24px;
+                        text-align: center;
+                        border: 1px solid purple;
+                        background-color: #fff;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+    &>nav{
+        margin-top: 40px;
+        height:30px;
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        span{
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            display: block;
+            background: url('../../public/image/icon/icon-areaTips.png') no-repeat;
+            text-align: center;
+        }
+    }
+    &>main{
+        width: 100%;
+        word-wrap: break-word;
+        &>.title{
+            min-height: 0.5rem;
+            border-bottom: 1px solid blue;
+            overflow: hidden;
+            h3{
+                line-height: 0.4rem;
+                font-size: 0.16rem;
+                color:yellowgreen;
+            }
+            padding: 0 0.1rem;
+            span{
+                float: right;
+                margin-right: 0.05rem;
+                color: red;
+                line-height: 0.3rem;
+            }
+        }
+        &>article{
+            /*width: 100%;*/
+            padding: 0.1rem;
+            .markdown-text{
+                border-bottom: 1px solid blue;
+                table{
+                    tr{
+                        width: 100%;
+                        td{
+                            width: 25%;
+                            word-break: break-word;
+                        }
+                    }
+                }
+                p{
+                    
+                    width: 100%;
+                    line-height: 0.25rem;
+                    /*text-indent: 0.24rem;*/
+                    white-space: normal;
+                    a{
+                        color:red;
+                    }
+                    strong{
+                        display: block;
+                        font-size: 0.16rem;
+                        font-weight: bolder;
+                    }
+                    
+                }
+                ul{
+                    li{
+                        font-size: 0.16rem;
+                        line-height: 0.3rem;
+                        position: relative;
+                        text-indent: 0.3rem;
+                        border-bottom: 1px dashed #ccc;
+                        &:before{
+                            content:'';
+                            display: inline-block;
+                            width: 30px;
+                            height: 30px;
+                            position: absolute;
+                            left: 0;
+                            top: 0.01rem;
+                            background: url('../../component/image/icon/icon-wujiaoxing.png') no-repeat;
+                        }
+                    }
+                }
+                blockquote{
+                    margin: 0;
+                }
+                h2{
+                    border-top: 1px dashed #ccc;
+                    color:red;
+                    font-weight: bolder;
+                    line-height: 0.3rem;
+                }
+                img{
+
+                    width: 100%;
+                }
+            }
+        }
+        &>.discuss{
+            line-height: 0.3rem;
+            border-bottom: 1px solid #ccc;
+            margin-left: 0.2rem;
+            
+            &>.discContent{
+                min-height: 0.6rem;
+                &>ul{
+                    &>li{
+
+                        border-bottom: 1px solid #ccc;
+                        padding: 0.1rem 0.1rem 0.4rem;
+                        position: relative;
+                        
+                        &>.userinfor{
+                            float: left;
+                            width: 20%;
+                            text-align: center;
+                            &>img{
+                                width: 0.5rem;
+                                border-radius: 50%;
+                            
+                            }
+                        }
+                        &>.content{
+                            width: 70%;
+                            float: left;
+                            word-wrap:break-all;
+                            margin-left: 0.2rem;
+                            text-align: right;
+                            
+                            .markdown-text p{
+                                line-height: 0.2rem;
+                                text-align: left;
+                                /*word-wrap:break-all;*/
+                                a{
+                                    word-wrap:break-all;
+                                }
+                            }
+                            img{
+                                width: 100%;
+                            }
+                            &>i{
+                                line-height: 0.3rem;
+                                color:red;
+                                position: absolute;
+                                right: 0.1rem;
+                                bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        
+        }
+    }
+}
