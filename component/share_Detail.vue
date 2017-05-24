@@ -48,6 +48,10 @@
 				</div>
 			</div>
 		</main>
+		<footer>
+			<input type="text" v-model="messageCont"/>
+			<span @click="sendMessage()">回复</span>
+		</footer>
 	</div>
 </template>
 
@@ -73,6 +77,33 @@
 
 		},
 		methods:{
+			sendMessage(){
+				var id = window.location.hash.split('/')[2]
+				console.log(id)
+				var self = this;
+				var cookie = document.cookie.split('; ')
+				
+				if(cookie[1]){
+					if(self.messageCont == ''){
+						alert('请输出内容')
+						return;
+					}
+					$.ajax({
+						
+						url:'https://cnodejs.org/api/v1/topic/'+id+'/replies',
+						type:'POST',
+						data:{
+							accesstoken : '28a0473d-7bed-48a1-a6a6-840afd389ddf',
+							content : self.messageCont,
+							success(data){
+								self.messageCont = '';
+							}
+						}
+					})
+				}else{
+					alert('请登录')
+				}
+			},
 			login(){
 				this.isLogin = !this.isLogin
 			},

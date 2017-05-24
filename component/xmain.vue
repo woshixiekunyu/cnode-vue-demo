@@ -190,10 +190,16 @@
 				}
 			});
 			console.log(cookie)
-			if(cookie[1]){
-				self.userImg = cookie[3].slice(8,)
+			for(var i=0;i<cookie.length;i++){
+				if(cookie[i].slice(0,7) == 'userImg'){
+					if(cookie[i]){
+						self.userImg = cookie[i].slice(8,)
+					}
+					break
+				}
 			}
-//			console.log(isHasaImg,self.userid,self.username,self.userImg)
+			
+//			console.log(isHasaImg,self.userid,self.username,self.userImg,1)
 //			判断是否登陆,更改为退出
 			if(self.userid){
 				self.loginVal = '退出'

@@ -216,4 +216,34 @@
         
         }
     }
+    footer{
+        background: #fff;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        input{
+            width: 70%;
+            height: 0.3rem;
+            display: block;
+        
+            border: 1px solid #ccc;
+        }
+        span{
+            width: 30%;
+            height: 0.3rem;
+            display: block;
+            padding: 1px;
+            border: 1px solid #ccc;
+            text-align: center;
+            line-height: 0.3rem;
+            font-size: 0.16rem;
+            background-color: #8A2BE2;
+            color:#fff
+            
+        }
+    }
+  
+    
 }
