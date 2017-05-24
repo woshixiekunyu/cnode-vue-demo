@@ -76,6 +76,7 @@
 .ask_Detail main{
 	width: 100%;
 	word-wrap: break-word;
+	margin-bottom: 30px;
 }
 .ask_Detail main .title{
 	width: 100%;
@@ -157,12 +158,41 @@
 .ask_Detail main .discuss .discContent .content img{
 	width: 100%;
 }
-.ask_Detail main .discuss .discContent .content>i{
+.ask_Detail main .discuss .discContent .content>.sendtime{
 	line-height: 0.3rem;
 	color:red;
 	position: absolute;
 	right: 0.4rem;
 	bottom: 0;
+}
+.ask_Detail footer{
+	background: #fff;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	
+}
+.ask_Detail footer input{
+	width: 70%;
+	height: 0.3rem;
+	display: block;
+
+	border: 1px solid #ccc;
+}
+.ask_Detail footer span{
+	width: 30%;
+	height: 0.3rem;
+	display: block;
+	padding: 1px;
+	border: 1px solid #ccc;
+	text-align: center;
+	line-height: 0.3rem;
+	font-size: 0.16rem;
+	background-color: #8A2BE2;
+	color:#fff
+	
 }
 .loginBg{
 	background-color: #fff;

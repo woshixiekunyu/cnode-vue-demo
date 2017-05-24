@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 28);
+/******/ 	return __webpack_require__(__webpack_require__.s = 29);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -265,7 +265,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(39)
+var listToStyles = __webpack_require__(41)
 
 /*
 type StyleObject = {
@@ -504,7 +504,7 @@ var stylesInDom = {},
 	singletonElement = null,
 	singletonCounter = 0,
 	styleElementsInsertedAtTop = [],
-	fixUrls = __webpack_require__(29);
+	fixUrls = __webpack_require__(30);
 
 module.exports = function(list, options) {
 	if(typeof DEBUG !== "undefined" && DEBUG) {
@@ -10637,7 +10637,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 	return jQuery;
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(26)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(27)(module)))
 
 /***/ }),
 /* 9 */
@@ -12947,7 +12947,7 @@ if (inBrowser && window.Vue) {
 }
 
 exports.default = VueRouter;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(27)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(28)))
 
 /***/ }),
 /* 10 */
@@ -21825,7 +21825,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
   return Vue$3;
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(26)))
 
 /***/ }),
 /* 11 */
@@ -22676,7 +22676,7 @@ exports.default = index_esm;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(40);
+var content = __webpack_require__(42);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -22707,7 +22707,7 @@ if(false) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(41);
+var content = __webpack_require__(43);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -22738,7 +22738,7 @@ if(false) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(42);
+var content = __webpack_require__(44);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -22769,7 +22769,7 @@ if(false) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(43);
+var content = __webpack_require__(45);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -22798,17 +22798,13 @@ if(false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(65)
-}
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(30),
+  __webpack_require__(31),
   /* template */
-  __webpack_require__(57),
+  __webpack_require__(59),
   /* styles */
-  injectStyle,
+  null,
   /* scopeId */
   null,
   /* moduleIdentifier (server only) */
@@ -22844,13 +22840,13 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(68)
+  __webpack_require__(71)
 }
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(31),
+  __webpack_require__(32),
   /* template */
-  __webpack_require__(61),
+  __webpack_require__(64),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -22888,9 +22884,9 @@ module.exports = Component.exports
 var disposed = false
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(32),
+  __webpack_require__(33),
   /* template */
-  __webpack_require__(55),
+  __webpack_require__(57),
   /* styles */
   null,
   /* scopeId */
@@ -22928,13 +22924,13 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(62)
+  __webpack_require__(65)
 }
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(33),
+  __webpack_require__(34),
   /* template */
-  __webpack_require__(53),
+  __webpack_require__(55),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -22972,9 +22968,9 @@ module.exports = Component.exports
 var disposed = false
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(34),
+  __webpack_require__(35),
   /* template */
-  __webpack_require__(58),
+  __webpack_require__(60),
   /* styles */
   null,
   /* scopeId */
@@ -23012,13 +23008,13 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(63)
+  __webpack_require__(66)
 }
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(35),
+  __webpack_require__(36),
   /* template */
-  __webpack_require__(54),
+  __webpack_require__(56),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -23056,13 +23052,57 @@ module.exports = Component.exports
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(67)
+  __webpack_require__(68)
 }
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(36),
+  __webpack_require__(37),
   /* template */
-  __webpack_require__(60),
+  __webpack_require__(61),
+  /* styles */
+  injectStyle,
+  /* scopeId */
+  "data-v-dcb494f0",
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "C:\\xampp\\htdocs\\cnode-vue-demo\\component\\login.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] login.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-dcb494f0", Component.options)
+  } else {
+    hotAPI.reload("data-v-dcb494f0", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(70)
+}
+var Component = __webpack_require__(1)(
+  /* script */
+  __webpack_require__(38),
+  /* template */
+  __webpack_require__(63),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -23094,19 +23134,19 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(66)
+  __webpack_require__(69)
 }
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(37),
+  __webpack_require__(39),
   /* template */
-  __webpack_require__(59),
+  __webpack_require__(62),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -23138,19 +23178,19 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(64)
+  __webpack_require__(67)
 }
 var Component = __webpack_require__(1)(
   /* script */
-  __webpack_require__(38),
+  __webpack_require__(40),
   /* template */
-  __webpack_require__(56),
+  __webpack_require__(58),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -23182,7 +23222,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports) {
 
 var g;
@@ -23207,7 +23247,7 @@ try {
 module.exports = g;
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports) {
 
 module.exports = function (module) {
@@ -23234,7 +23274,7 @@ module.exports = function (module) {
 };
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -23424,7 +23464,7 @@ process.umask = function () {
 };
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23466,13 +23506,14 @@ __webpack_require__(14);
 //引入路由
 
 _vue2.default.use(_vueRouter2.default);
-var xmain = __webpack_require__(24);
+var xmain = __webpack_require__(25);
+var login = __webpack_require__(22);
 var ask_list = __webpack_require__(17);
-var share_list = __webpack_require__(23);
+var share_list = __webpack_require__(24);
 var job_list = __webpack_require__(21);
 var good_list = __webpack_require__(19);
 var ask_Detail = __webpack_require__(16);
-var share_Detail = __webpack_require__(22);
+var share_Detail = __webpack_require__(23);
 var job_Detail = __webpack_require__(20);
 var good_Detail = __webpack_require__(18);
 
@@ -23531,6 +23572,10 @@ var router = new _vueRouter2.default({
 		component: good_Detail
 
 	}, {
+		path: '/login',
+		component: login
+
+	}, {
 		path: '/',
 		redirect: '/xmain/ask_list'
 	}]
@@ -23547,7 +23592,7 @@ new _vue2.default({
 });
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23642,7 +23687,7 @@ module.exports = function (css) {
 };
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23651,6 +23696,15 @@ module.exports = function (css) {
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -23715,11 +23769,39 @@ exports.default = {
 			author: '',
 			discContent: '',
 			disTime: '',
-			disnum: 0
+			disnum: 0,
+			messageCont: ''
 		};
 	},
 
 	methods: {
+		sendMessage: function sendMessage() {
+			var id = window.location.hash.split('/')[2];
+			console.log(id);
+			var self = this;
+			var cookie = document.cookie.split('; ');
+
+			if (cookie[1]) {
+				if (self.messageCont == '') {
+					alert('请输出内容');
+					return;
+				}
+				$.ajax({
+
+					url: 'https://cnodejs.org/api/v1/topic/' + id + '/replies',
+					type: 'POST',
+					data: {
+						accesstoken: '28a0473d-7bed-48a1-a6a6-840afd389ddf',
+						content: self.messageCont,
+						success: function success(data) {
+							self.messageCont = '';
+						}
+					}
+				});
+			} else {
+				alert('请登录');
+			}
+		},
 		login: function login() {
 			this.isLogin = !this.isLogin;
 		},
@@ -23727,6 +23809,49 @@ exports.default = {
 
 			var hrefs = location.hash.split('/')[1].substr(0, 3);
 			window.location.href = "#/xmain/" + hrefs + "_list";
+		},
+
+		//			zan(id){
+		//				var self = this;
+		//				var cookie = document.cookie.split('; ')
+		//				if(cookie[1]){
+		//					$.ajax({
+		//						url:'https://cnodejs.org/api/reply/'+id+'/ups',
+		//						type:'POST',
+		//						data:{
+		//							accesstoken :'28a0473d-7bed-48a1-a6a6-840afd389ddf'
+		//						},
+		//						success(data){
+		//							console.log(data)
+		//						}
+		//					})
+		//				}else{
+		//					alert('请登录')
+		//				}
+		//			},
+		toLogin: function toLogin() {
+			if (this.loginVal == '登录') {
+				this.isLogin = false;
+				window.location.href = "#/login";
+			} else if (this.loginVal == '退出') {
+				$.ajax({
+					url: 'https://cnodejs.org/api/v1/accesstoken',
+					type: 'POST',
+					data: {
+						accesstoken: '28a0473d-7bed-48a1-a6a6-840afd389ddf'
+					},
+					success: function success(data) {
+						console.log(data);
+						var now = new Date();
+						now.setDate(now.getDate() - 1);
+						document.cookie = 'username=' + data.loginname + ';expires=' + now;
+						document.cookie = 'userid=' + data.id + ';expires=' + now;
+						document.cookie = 'userImg=' + data.avatar_url + ';expires=' + now;
+						self.userKey = '';
+						location.reload();
+					}
+				});
+			}
 		}
 	},
 	computed: {
@@ -23757,10 +23882,14 @@ exports.default = {
 				if (data.data.replies.length > 0) {
 					self.disnum = self.discContent.length;
 				}
-				//					self.disnum = self.disContent.length
+				//					self.reply = data.data.replies
 			}
 		});
-		console.log($('.area'));
+		//			console.log($('.area'))
+		var cookie = document.cookie.split('; ');
+		if (cookie[1]) {
+			self.loginVal = '退出';
+		}
 	},
 
 	directives: {
@@ -23802,7 +23931,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23913,7 +24042,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23922,6 +24051,9 @@ exports.default = {
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
+//
+//
+//
 //
 //
 //
@@ -23998,6 +24130,38 @@ exports.default = {
 
 			var hrefs = location.hash.split('/')[1].substr(0, 4);
 			window.location.href = "#/xmain/" + hrefs + "_list";
+		},
+		toLogin: function toLogin() {
+			if (this.loginVal == '登录') {
+				this.isLogin = false;
+				window.location.href = "#/login";
+			} else if (this.loginVal == '退出') {
+				$.ajax({
+					url: 'https://cnodejs.org/api/v1/accesstoken',
+					type: 'POST',
+					data: {
+						accesstoken: '28a0473d-7bed-48a1-a6a6-840afd389ddf'
+					},
+					success: function success(data) {
+						console.log(data);
+						var now = new Date();
+						now.setDate(now.getDate() - 1);
+						document.cookie = 'username=' + data.loginname + ';expires=' + now;
+						document.cookie = 'userid=' + data.id + ';expires=' + now;
+						document.cookie = 'userImg=' + data.avatar_url + ';expires=' + now;
+						self.userKey = '';
+						location.reload();
+					}
+				});
+			}
+		},
+		zan: function zan() {
+			var cookie = document.cookie.split('; ');
+			if (cookie[1]) {
+				console.log(666);
+			} else {
+				alert('请登录');
+			}
 		}
 	},
 	computed: {
@@ -24028,7 +24192,11 @@ exports.default = {
 				}
 			}
 		});
-		console.log($('.area'));
+		//			console.log($('.area'))
+		var cookie = document.cookie.split('; ');
+		if (cookie[1]) {
+			self.loginVal = '退出';
+		}
 	},
 
 	directives: {
@@ -24055,7 +24223,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24161,7 +24329,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24170,6 +24338,9 @@ exports.default = {
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
+//
+//
+//
 //
 //
 //
@@ -24246,6 +24417,38 @@ exports.default = {
 
 			var hrefs = location.hash.split('/')[1].substr(0, 3);
 			window.location.href = "#/xmain/" + hrefs + "_list";
+		},
+		zan: function zan() {
+			var cookie = document.cookie.split('; ');
+			if (cookie[1]) {
+				console.log(666);
+			} else {
+				alert('请登录');
+			}
+		},
+		toLogin: function toLogin() {
+			if (this.loginVal == '登录') {
+				this.isLogin = false;
+				window.location.href = "#/login";
+			} else if (this.loginVal == '退出') {
+				$.ajax({
+					url: 'https://cnodejs.org/api/v1/accesstoken',
+					type: 'POST',
+					data: {
+						accesstoken: '28a0473d-7bed-48a1-a6a6-840afd389ddf'
+					},
+					success: function success(data) {
+						//							console.log(data)
+						var now = new Date();
+						now.setDate(now.getDate() - 1);
+						document.cookie = 'username=' + data.loginname + ';expires=' + now;
+						document.cookie = 'userid=' + data.id + ';expires=' + now;
+						document.cookie = 'userImg=' + data.avatar_url + ';expires=' + now;
+						self.userKey = '';
+						location.reload();
+					}
+				});
+			}
 		}
 	},
 	computed: {
@@ -24258,27 +24461,32 @@ exports.default = {
 		var self = this;
 		//			console.log(window.location)
 		var params = window.location.hash.split('/')[2];
-		console.log(params);
+		//			console.log(params)
 		$.ajax({
 			url: 'https://cnodejs.org/api/v1/topic/' + params,
 			type: 'GET',
 
 			success: function success(data) {
-				console.log(data);
+				//					console.log(data)
 				self.title = data.data.title;
 				self.time = data.data.create_at.substr(0, 10);
 				$('.timess').html(self.time);
 				self.content = data.data.content;
 				self.author = data.data.author.loginname;
 				self.discContent = data.data.replies;
-				console.log(data.data.replies);
+				//					console.log(data.data.replies)
 				if (data.data.replies.length > 0) {
 					self.disnum = self.discContent.length;
 				}
-				console.log($('code'), 1);
+				//					console.log($('code'),1)
 			}
 		});
-		console.log($('.area'));
+		//			console.log($('.area'))
+
+		var cookie = document.cookie.split('; ');
+		if (cookie[1]) {
+			self.loginVal = '退出';
+		}
 	},
 
 	directives: {
@@ -24305,7 +24513,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24416,7 +24624,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24425,6 +24633,80 @@ exports.default = {
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+	data: function data() {
+		return {
+			userKey: '',
+			isLoginPage: false
+		};
+	},
+
+	methods: {
+		exitbtn: function exitbtn() {
+			window.history.back();
+		},
+		btnLogin: function btnLogin() {
+			var self = this;
+			if (self.userKey == '28a0473d-7bed-48a1-a6a6-840afd389ddf') {
+				$.ajax({
+					url: 'https://cnodejs.org/api/v1/accesstoken',
+					type: 'POST',
+					data: {
+						accesstoken: self.userKey
+					},
+					success: function success(data) {
+						console.log(data);
+						var now = new Date();
+						now.setDate(now.getDate() + 7);
+						document.cookie = 'username=' + data.loginname + ';expires=' + now;
+						document.cookie = 'userid=' + data.id + ';expires=' + now;
+						document.cookie = 'userImg=' + data.avatar_url + ';expires=' + now;
+						self.userKey = '';
+						window.location.href = "#/xmain/ask_list";
+					}
+				});
+			} else {
+				console.log('错误');
+			}
+		}
+	},
+	mounted: function mounted() {
+		$('input').focus();
+	}
+};
+
+/***/ }),
+/* 38 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+//
+//
 //
 //
 //
@@ -24506,6 +24788,38 @@ exports.default = {
 
 			var hrefs = location.hash.split('/')[1].substr(0, 5);
 			window.location.href = "#/xmain/" + hrefs + "_list";
+		},
+		zan: function zan() {
+			var cookie = document.cookie.split('; ');
+			if (cookie[1]) {
+				console.log(666);
+			} else {
+				alert('请登录');
+			}
+		},
+		toLogin: function toLogin() {
+			if (this.loginVal == '登录') {
+				this.isLogin = false;
+				window.location.href = "#/login";
+			} else if (this.loginVal == '退出') {
+				$.ajax({
+					url: 'https://cnodejs.org/api/v1/accesstoken',
+					type: 'POST',
+					data: {
+						accesstoken: '28a0473d-7bed-48a1-a6a6-840afd389ddf'
+					},
+					success: function success(data) {
+						//							console.log(data)
+						var now = new Date();
+						now.setDate(now.getDate() - 1);
+						document.cookie = 'username=' + data.loginname + ';expires=' + now;
+						document.cookie = 'userid=' + data.id + ';expires=' + now;
+						document.cookie = 'userImg=' + data.avatar_url + ';expires=' + now;
+						self.userKey = '';
+						location.reload();
+					}
+				});
+			}
 		}
 	},
 	mounted: function mounted() {
@@ -24530,9 +24844,13 @@ exports.default = {
 				self.disContent = data.data.replies;
 			}
 		});
-		console.log($('.area'));
+		//			console.log($('.area'))
 		if (this.getIsImg) {
 			this.getIsImg = false;
+		}
+		var cookie = document.cookie.split('; ');
+		if (cookie[1]) {
+			self.loginVal = '退出';
 		}
 	},
 
@@ -24585,18 +24903,12 @@ exports.default = {
 					e.stopPropagation();
 				});
 			});
-		},
-
-		allA: {
-			bind: function bind(el) {
-				//					console.log($(el).children('.markdown-text').children('p').html())
-			}
 		}
 	}
 };
 
 /***/ }),
-/* 37 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24705,7 +25017,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 38 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24757,25 +25069,18 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 exports.default = {
 	data: function data() {
 		return {
 			loginVal: '登录',
 			isLogin: false,
-			name: '谢',
+			username: '游客',
 			isImg: true,
 			num: 0,
-			isLoginPage: false
+			isnoisLeftMenu: false,
+			userImg: '',
+			userid: ''
 		};
 	},
 	computed: {
@@ -24797,11 +25102,14 @@ exports.default = {
 						this.num = 1;
 						clearInterval(timer);
 					}
-					console.log(this.num);
+					//						console.log(this.num)
 					$('header div').eq(8).children('ul').animate({ 'opacity': this.num });
 				}.bind(this), 0);
 			} else if (num == 1) {
-				$('.left_menu').animate({ 'left': 0 }, 500);
+				$('.left_menu').animate({ 'left': 0 }, 500, function () {
+					this.isnoisLeftMenu = true;
+					$('.left_menu').css('width', '100%');
+				}.bind(this));
 			}
 		},
 		isHasImg: function isHasImg() {
@@ -24823,24 +25131,40 @@ exports.default = {
 			}
 		},
 		noisLeftMenu: function noisLeftMenu() {
-			$('.left_menu').animate({ 'left': "-100%" }, 500);
-		},
-		exitbtn: function exitbtn() {
-			this.isLoginPage = false;
-			$('.loginPage').animate({ 'right': '-100%', 'top': '-100%' }, 1000);
+			this.isnoisLeftMenu = false;
+			$('.left_menu').css('width', '70%');
+			$('.left_menu').animate({ 'left': "-100%" }, 300);
 		},
 		toLogin: function toLogin() {
-			this.isLogin = false;
-			$('.loginPage').animate({ 'right': 0, 'top': 0 }, 1000, function () {
-
-				this.isLoginPage = true;
-			}.bind(this));
+			if (this.loginVal == '登录') {
+				this.isLogin = false;
+				window.location.href = "#/login";
+			} else if (this.loginVal == '退出') {
+				$.ajax({
+					url: 'https://cnodejs.org/api/v1/accesstoken',
+					type: 'POST',
+					data: {
+						accesstoken: '28a0473d-7bed-48a1-a6a6-840afd389ddf'
+					},
+					success: function success(data) {
+						console.log(data);
+						var now = new Date();
+						now.setDate(now.getDate() - 1);
+						document.cookie = 'username=' + data.loginname + ';expires=' + now;
+						document.cookie = 'userid=' + data.id + ';expires=' + now;
+						document.cookie = 'userImg=' + data.avatar_url + ';expires=' + now;
+						self.userKey = '';
+						location.reload();
+					}
+				});
+			}
 		}
 	},
 	mounted: function mounted() {
 
 		var self = this;
 		var tabArr = ['ask', 'share', 'job', 'good'];
+		//			绑定点击事件
 		$('header').on('click', 'span', function () {
 
 			$(this).addClass('active').siblings().removeClass('active').fadeToggle('fast', 'swing');
@@ -24852,6 +25176,8 @@ exports.default = {
 			}
 		});
 		//			console.log(window.location.hash.split('/')[2])
+
+		//判断选项卡页面并高粱
 		if (window.location.hash.split('/')[2] == 'ask_list') {
 			$('header>span').eq(0).addClass('active').siblings().removeClass('active').fadeToggle('fast', 'swing');
 		} else if (window.location.hash.split('/')[2] == 'share_list') {
@@ -24867,20 +25193,37 @@ exports.default = {
 		});
 		$('header>div').eq(6).children('ul').css('top', 40);
 
+		//页面刷新时获取是否无图的cookie
 		var isHasaImg;
 		var cookie = document.cookie.split('; ');
+		//			console.log(cookie[2].slice(8,))
 		cookie.forEach(function (item) {
 			var arr = item.split('=');
+			//				console.log(arr)
 			if (arr[0] == 'isImg') {
 				isHasaImg = arr[1];
-			}
+			} //获取user信息
+			else if (arr[0] == 'userid') {
+					self.userid = arr[1];
+				} else if (arr[0] == 'username') {
+					self.username = arr[1];
+				}
 		});
+		console.log(cookie);
+		if (cookie[1]) {
+			self.userImg = cookie[3].slice(8);
+		}
+		//			console.log(isHasaImg,self.userid,self.username,self.userImg)
+		//			判断是否登陆,更改为退出
+		if (self.userid) {
+			self.loginVal = '退出';
+		}
 		if (isHasaImg == 'true') {
-			console.log(isHasaImg);
+			//				console.log(isHasaImg)
 			$('.left_menu').children('.hasisLeftMenu').children('.useImg').children('.hasImg').css('backgroundColor', 'green').children('span').css('left', '0.25rem');
 			this.$store.commit('getIsImg', true);
 		} else {
-			console.log(isHasaImg);
+			//				console.log(isHasaImg)
 			$('.left_menu').children('.hasisLeftMenu').children('.useImg').children('.hasImg').css('backgroundColor', '').children('span').css('left', '0');
 			this.$store.commit('getIsImg', false);
 		}
@@ -24888,7 +25231,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 39 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24923,34 +25266,6 @@ module.exports = function listToStyles(parentId, list) {
 };
 
 /***/ }),
-/* 40 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, ".ask_Detail header{\r\n\theight: 40px;\r\n\t/*background-color: greenyellow;*/\r\n\tdisplay: flex;\r\n\r\n\tbackground-color: purple;\r\n\tz-index: 1000;\r\n\t\r\n\t\r\n}\r\n.ask_Detail header div i{\r\n\t\tmargin: 10px auto;\r\n\t}\r\n\t\r\n.ask_Detail header div:nth-child(1){\r\n\tflex: 1;\r\n\theight: 40px;\r\n\tbackground-color: blueviolet;\r\n\t\r\n}\r\n.ask_Detail header div:nth-child(1) i{\r\n\t/*margin-top: 12px;*/\r\n\tdisplay: block;\r\n\twidth: 24px;\r\n\theight: 24px;\r\n\tbackground: url(" + __webpack_require__(5) + ") no-repeat;\r\n}\r\n.ask_Detail header div:nth-child(2){\r\n\tflex: 6.5;\r\n}\r\n.ask_Detail header div:nth-child(3){\r\n\tflex: 2;\r\n\tposition: relative;\r\n\tborder-radius: 50%;\r\n\t\r\n}\r\n.ask_Detail header div:nth-child(3) i{\r\n\t/*margin-top: 8px;*/\r\n\twidth: 24px;\r\n\theight: 24px;\r\n\tdisplay: block;\r\n\tbackground: url(" + __webpack_require__(6) + ") no-repeat;\r\n\t\r\n}\r\n\r\n.ask_Detail header div:nth-child(3) ul{\r\n\tposition: absolute;\r\n\tright: 0;\r\n\ttop: 0;\r\n\twidth: 100%;\r\n}\r\n.ask_Detail header div:nth-child(3) ul li{\r\n\twidth: 100%;\r\n\theight: 40px;\r\n\tline-height: 40px;\r\n\ttext-align: center;\r\n\t/*padding: 0 0.1rem;*/\r\n\tborder: 1px solid purple;\r\n\tbackground-color: #fff;\r\n\tborder-radius: 50%;\r\n}\r\n.ask_Detail nav{\r\n\tmargin-top: 40px;\r\n\theight:30px;\r\n\twidth: 100%;\r\n\tborder-bottom: 1px solid #ccc;\r\n}\r\n.ask_Detail nav>span{\r\n\twidth: 80px;\r\n\theight: 30px;\r\n\tline-height: 30px;\r\n\tdisplay: block;\r\n\tbackground: url(" + __webpack_require__(4) + ") no-repeat;\r\n\ttext-align: center;\r\n}\r\n.ask_Detail main{\r\n\twidth: 100%;\r\n\tword-wrap: break-word;\r\n}\r\n.ask_Detail main .title{\r\n\twidth: 100%;\r\n\tborder-bottom: 1px solid green;\r\n\r\n}\r\n.ask_Detail main .title h3{\r\n\tpadding: 5px 10px;\r\n\ttext-indent: 0.3rem;\r\n\tline-height: 0.3rem;\r\n}\r\n.ask_Detail main .title span{\r\n\tfloat: right;\r\n\t/*margin-right: 0.15rem;*/\r\n\tline-height: 0.2rem;\t\t\r\n}\r\n\t\r\n.ask_Detail main article{\r\n\twidth: 100%;\r\n\tmin-height: 3rem;\r\n\tborder-bottom: 1px solid green;\r\n}\r\n.ask_Detail main article .markdown-text{\r\n\tpadding: 0.2rem 0.3rem;\r\n}\r\n.ask_Detail main article .markdown-text p{\r\n\ttext-align: left;\r\n\tline-height: 0.3rem;\r\n\t\r\n}\r\n.ask_Detail main article .markdown-text img{\r\n\twidth: 100%;\r\n}\r\n\r\n.ask_Detail main .discuss h3{\r\n\tline-height: 0.3rem;\r\n\t/*text-indent: 0.2rem;*/\r\n\tborder-bottom: 1px solid #ccc;\r\n\tmargin-left: 0.2rem;\r\n}\r\n.ask_Detail main .discuss h3 span{\r\n\tmargin-left:0.8rem ;\r\n}\r\n.ask_Detail main .discuss .discContent>ul>li{\r\n\tborder-bottom: 1px solid #ccc;\r\n\r\n\r\n\tpadding: 0.1rem;\r\n\tposition: relative;\r\n\tpadding-bottom: 0.3rem;\r\n}\r\n.ask_Detail main .discuss .discContent{\r\n\tmin-height: 0.6rem;\r\n}\r\n.ask_Detail main .discuss .discContent .userinfor{\r\n\t\r\n\tfloat: left;\r\n\twidth: 20%;\r\n\ttext-align: center;\r\n}\r\n.ask_Detail main .discuss .discContent .userinfor img{\r\n\twidth: 0.5rem;\r\n\tborder-radius: 50%;\r\n\r\n}\r\n.ask_Detail main .discuss .discContent .content{\r\n\twidth: 60%;\r\n\tfloat: left;\r\n\tword-wrap:break-all;\r\n\tmargin-left: 0.2rem;\r\n\t\r\n}\r\n\r\n.ask_Detail main .discuss .discContent .content .markdown-text p{\r\n\tline-height: 0.2rem;\r\n\ttext-align: left;\r\n\t\r\n}\r\n.ask_Detail main .discuss .discContent .content img{\r\n\twidth: 100%;\r\n}\r\n.ask_Detail main .discuss .discContent .content>i{\r\n\tline-height: 0.3rem;\r\n\tcolor:red;\r\n\tposition: absolute;\r\n\tright: 0.4rem;\r\n\tbottom: 0;\r\n}\r\n.loginBg{\r\n\tbackground-color: #fff;\r\n\ttransition: all 1s;\r\n}\r\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 41 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(0)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "html,body,h1,h2,h3,h4,h5,h6,ul,li,p{\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n}\r\na{text-decoration: none;}\r\ni{font-style: none;}\r\nul,li{list-style: none;}\r\nhtml,body{width:100%;color:#5D656B;background-color: #fff;}\r\nhtml{\r\n\tfont-size: 625%;\r\n}\r\nbody{\r\n\tfont-size: 0.12rem;\r\n}\r\nheader{\r\n\tposition: fixed;\r\n\ttop: 0;\r\n\twidth: 100%;\r\n\tdisplay: flex;\r\n\ttext-align: center;\r\n}\r\nbody{\r\n\twidth: 100%;\r\n\t\r\n}\r\n\r\n\r\n.clearfix::before,\r\n.clearfix::after{\r\n\tdisplay:block;\r\n\theight:0;\r\n\tclear:both;\r\n\tcontent: \"\";\r\n\t/*height: 0;*/\r\n\t/*line-height:0;*/\r\n\t/*display: block;*/\r\n\t/*clear: both;*/\r\n\t/*visibility: hidden;*/\r\n}", ""]);
-
-// exports
-
-
-/***/ }),
 /* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24959,7 +25274,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".job_Detail > header {\n  height: 40px;\n  width: 100%;\n  display: flex;\n  background-color: purple;\n  position: fixed;\n  z-index: 1000;\n  top: 0;\n  left: 0; }\n  .job_Detail > header div i {\n    margin: 10px auto; }\n  .job_Detail > header div:nth-child(1) {\n    flex: 1;\n    height: 40px;\n    background-color: blueviolet; }\n    .job_Detail > header div:nth-child(1) i {\n      display: block;\n      width: 24px;\n      height: 24px;\n      background: url(" + __webpack_require__(5) + ") no-repeat; }\n  .job_Detail > header div:nth-child(2) {\n    flex: 7.5; }\n  .job_Detail > header div:nth-child(3) {\n    flex: 1.5;\n    position: relative;\n    border-radius: 50%; }\n    .job_Detail > header div:nth-child(3) > i {\n      /*margin-top: 8px;*/\n      width: 24px;\n      height: 24px;\n      display: block;\n      background: url(" + __webpack_require__(6) + "); }\n    .job_Detail > header div:nth-child(3) ul {\n      position: absolute;\n      right: 0;\n      top: 0;\n      width: 100%; }\n      .job_Detail > header div:nth-child(3) ul li {\n        width: 100%;\n        height: 24px;\n        line-height: 24px;\n        text-align: center;\n        border: 1px solid purple;\n        background-color: #fff;\n        border-radius: 50%; }\n\n.job_Detail > nav {\n  margin-top: 40px;\n  height: 30px;\n  width: 100%;\n  border-bottom: 1px solid #ccc; }\n  .job_Detail > nav span {\n    width: 80px;\n    height: 30px;\n    line-height: 30px;\n    display: block;\n    background: url(" + __webpack_require__(4) + ") no-repeat;\n    text-align: center; }\n\n.job_Detail > main {\n  width: 100%;\n  word-wrap: break-word; }\n  .job_Detail > main > .title {\n    min-height: 0.5rem;\n    border-bottom: 1px solid blue;\n    overflow: hidden;\n    padding: 0 0.1rem; }\n    .job_Detail > main > .title h3 {\n      line-height: 0.4rem;\n      font-size: 0.16rem;\n      color: yellowgreen; }\n    .job_Detail > main > .title span {\n      float: right;\n      margin-right: 0.05rem;\n      color: red;\n      line-height: 0.3rem; }\n  .job_Detail > main > article {\n    /*width: 100%;*/\n    padding: 0.1rem; }\n    .job_Detail > main > article .markdown-text {\n      border-bottom: 1px solid blue; }\n      .job_Detail > main > article .markdown-text table tr {\n        width: 100%; }\n        .job_Detail > main > article .markdown-text table tr td {\n          width: 25%;\n          word-break: break-word; }\n      .job_Detail > main > article .markdown-text p {\n        width: 100%;\n        line-height: 0.25rem;\n        /*text-indent: 0.24rem;*/\n        white-space: normal; }\n        .job_Detail > main > article .markdown-text p a {\n          color: red; }\n        .job_Detail > main > article .markdown-text p strong {\n          display: block;\n          font-size: 0.16rem;\n          font-weight: bolder; }\n      .job_Detail > main > article .markdown-text ul li {\n        font-size: 0.16rem;\n        line-height: 0.3rem;\n        position: relative;\n        text-indent: 0.3rem;\n        border-bottom: 1px dashed #ccc; }\n        .job_Detail > main > article .markdown-text ul li:before {\n          content: '';\n          display: inline-block;\n          width: 30px;\n          height: 30px;\n          position: absolute;\n          left: 0;\n          top: 0.01rem;\n          background: url(" + __webpack_require__(7) + ") no-repeat; }\n      .job_Detail > main > article .markdown-text blockquote {\n        margin: 0; }\n      .job_Detail > main > article .markdown-text h2 {\n        border-top: 1px dashed #ccc;\n        color: red;\n        font-weight: bolder;\n        line-height: 0.3rem; }\n      .job_Detail > main > article .markdown-text img {\n        width: 100%; }\n  .job_Detail > main > .discuss {\n    line-height: 0.3rem;\n    border-bottom: 1px solid #ccc;\n    margin-left: 0.2rem; }\n    .job_Detail > main > .discuss > .discContent {\n      min-height: 0.6rem; }\n      .job_Detail > main > .discuss > .discContent > ul > li {\n        border-bottom: 1px solid #ccc;\n        padding: 0.1rem 0.1rem 0.4rem;\n        position: relative; }\n        .job_Detail > main > .discuss > .discContent > ul > li > .userinfor {\n          float: left;\n          width: 20%;\n          text-align: center; }\n          .job_Detail > main > .discuss > .discContent > ul > li > .userinfor > img {\n            width: 0.5rem;\n            border-radius: 50%; }\n        .job_Detail > main > .discuss > .discContent > ul > li > .content {\n          width: 70%;\n          float: left;\n          word-wrap: break-all;\n          margin-left: 0.2rem;\n          text-align: right; }\n          .job_Detail > main > .discuss > .discContent > ul > li > .content .markdown-text p {\n            line-height: 0.2rem;\n            text-align: left;\n            /*word-wrap:break-all;*/ }\n            .job_Detail > main > .discuss > .discContent > ul > li > .content .markdown-text p a {\n              word-wrap: break-all; }\n          .job_Detail > main > .discuss > .discContent > ul > li > .content img {\n            width: 100%; }\n          .job_Detail > main > .discuss > .discContent > ul > li > .content > i {\n            line-height: 0.3rem;\n            color: red;\n            position: absolute;\n            right: 0.1rem;\n            bottom: 0; }\n", ""]);
+exports.push([module.i, ".ask_Detail header{\r\n\theight: 40px;\r\n\t/*background-color: greenyellow;*/\r\n\tdisplay: flex;\r\n\r\n\tbackground-color: purple;\r\n\tz-index: 1000;\r\n\t\r\n\t\r\n}\r\n.ask_Detail header div i{\r\n\t\tmargin: 10px auto;\r\n\t}\r\n\t\r\n.ask_Detail header div:nth-child(1){\r\n\tflex: 1;\r\n\theight: 40px;\r\n\tbackground-color: blueviolet;\r\n\t\r\n}\r\n.ask_Detail header div:nth-child(1) i{\r\n\t/*margin-top: 12px;*/\r\n\tdisplay: block;\r\n\twidth: 24px;\r\n\theight: 24px;\r\n\tbackground: url(" + __webpack_require__(5) + ") no-repeat;\r\n}\r\n.ask_Detail header div:nth-child(2){\r\n\tflex: 6.5;\r\n}\r\n.ask_Detail header div:nth-child(3){\r\n\tflex: 2;\r\n\tposition: relative;\r\n\tborder-radius: 50%;\r\n\t\r\n}\r\n.ask_Detail header div:nth-child(3) i{\r\n\t/*margin-top: 8px;*/\r\n\twidth: 24px;\r\n\theight: 24px;\r\n\tdisplay: block;\r\n\tbackground: url(" + __webpack_require__(6) + ") no-repeat;\r\n\t\r\n}\r\n\r\n.ask_Detail header div:nth-child(3) ul{\r\n\tposition: absolute;\r\n\tright: 0;\r\n\ttop: 0;\r\n\twidth: 100%;\r\n}\r\n.ask_Detail header div:nth-child(3) ul li{\r\n\twidth: 100%;\r\n\theight: 40px;\r\n\tline-height: 40px;\r\n\ttext-align: center;\r\n\t/*padding: 0 0.1rem;*/\r\n\tborder: 1px solid purple;\r\n\tbackground-color: #fff;\r\n\tborder-radius: 50%;\r\n}\r\n.ask_Detail nav{\r\n\tmargin-top: 40px;\r\n\theight:30px;\r\n\twidth: 100%;\r\n\tborder-bottom: 1px solid #ccc;\r\n}\r\n.ask_Detail nav>span{\r\n\twidth: 80px;\r\n\theight: 30px;\r\n\tline-height: 30px;\r\n\tdisplay: block;\r\n\tbackground: url(" + __webpack_require__(4) + ") no-repeat;\r\n\ttext-align: center;\r\n}\r\n.ask_Detail main{\r\n\twidth: 100%;\r\n\tword-wrap: break-word;\r\n\tmargin-bottom: 30px;\r\n}\r\n.ask_Detail main .title{\r\n\twidth: 100%;\r\n\tborder-bottom: 1px solid green;\r\n\r\n}\r\n.ask_Detail main .title h3{\r\n\tpadding: 5px 10px;\r\n\ttext-indent: 0.3rem;\r\n\tline-height: 0.3rem;\r\n}\r\n.ask_Detail main .title span{\r\n\tfloat: right;\r\n\t/*margin-right: 0.15rem;*/\r\n\tline-height: 0.2rem;\t\t\r\n}\r\n\t\r\n.ask_Detail main article{\r\n\twidth: 100%;\r\n\tmin-height: 3rem;\r\n\tborder-bottom: 1px solid green;\r\n}\r\n.ask_Detail main article .markdown-text{\r\n\tpadding: 0.2rem 0.3rem;\r\n}\r\n.ask_Detail main article .markdown-text p{\r\n\ttext-align: left;\r\n\tline-height: 0.3rem;\r\n\t\r\n}\r\n.ask_Detail main article .markdown-text img{\r\n\twidth: 100%;\r\n}\r\n\r\n.ask_Detail main .discuss h3{\r\n\tline-height: 0.3rem;\r\n\t/*text-indent: 0.2rem;*/\r\n\tborder-bottom: 1px solid #ccc;\r\n\tmargin-left: 0.2rem;\r\n}\r\n.ask_Detail main .discuss h3 span{\r\n\tmargin-left:0.8rem ;\r\n}\r\n.ask_Detail main .discuss .discContent>ul>li{\r\n\tborder-bottom: 1px solid #ccc;\r\n\r\n\r\n\tpadding: 0.1rem;\r\n\tposition: relative;\r\n\tpadding-bottom: 0.3rem;\r\n}\r\n.ask_Detail main .discuss .discContent{\r\n\tmin-height: 0.6rem;\r\n}\r\n.ask_Detail main .discuss .discContent .userinfor{\r\n\t\r\n\tfloat: left;\r\n\twidth: 20%;\r\n\ttext-align: center;\r\n}\r\n.ask_Detail main .discuss .discContent .userinfor img{\r\n\twidth: 0.5rem;\r\n\tborder-radius: 50%;\r\n\r\n}\r\n.ask_Detail main .discuss .discContent .content{\r\n\twidth: 60%;\r\n\tfloat: left;\r\n\tword-wrap:break-all;\r\n\tmargin-left: 0.2rem;\r\n\t\r\n}\r\n\r\n.ask_Detail main .discuss .discContent .content .markdown-text p{\r\n\tline-height: 0.2rem;\r\n\ttext-align: left;\r\n\t\r\n}\r\n.ask_Detail main .discuss .discContent .content img{\r\n\twidth: 100%;\r\n}\r\n.ask_Detail main .discuss .discContent .content>.sendtime{\r\n\tline-height: 0.3rem;\r\n\tcolor:red;\r\n\tposition: absolute;\r\n\tright: 0.4rem;\r\n\tbottom: 0;\r\n}\r\n.ask_Detail footer{\r\n\tbackground: #fff;\r\n\twidth: 100%;\r\n\tposition: fixed;\r\n\tbottom: 0;\r\n\tleft: 0;\r\n\tdisplay: flex;\r\n\t\r\n}\r\n.ask_Detail footer input{\r\n\twidth: 70%;\r\n\theight: 0.3rem;\r\n\tdisplay: block;\r\n\r\n\tborder: 1px solid #ccc;\r\n}\r\n.ask_Detail footer span{\r\n\twidth: 30%;\r\n\theight: 0.3rem;\r\n\tdisplay: block;\r\n\tpadding: 1px;\r\n\tborder: 1px solid #ccc;\r\n\ttext-align: center;\r\n\tline-height: 0.3rem;\r\n\tfont-size: 0.16rem;\r\n\tbackground-color: #8A2BE2;\r\n\tcolor:#fff\r\n\t\r\n}\r\n.loginBg{\r\n\tbackground-color: #fff;\r\n\ttransition: all 1s;\r\n}\r\n", ""]);
 
 // exports
 
@@ -24973,7 +25288,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, ".share_Detail > header {\n  height: 40px;\n  width: 100%;\n  display: flex;\n  background-color: purple;\n  position: fixed;\n  z-index: 1000;\n  top: 0;\n  left: 0; }\n  .share_Detail > header div i {\n    margin: 10px auto; }\n  .share_Detail > header div:nth-child(1) {\n    flex: 1;\n    height: 40px;\n    background-color: blueviolet; }\n    .share_Detail > header div:nth-child(1) i {\n      display: block;\n      width: 24px;\n      height: 24px;\n      background: url(" + __webpack_require__(5) + ") no-repeat; }\n  .share_Detail > header div:nth-child(2) {\n    flex: 7.5; }\n  .share_Detail > header div:nth-child(3) {\n    flex: 1.5;\n    position: relative;\n    border-radius: 50%; }\n    .share_Detail > header div:nth-child(3) > i {\n      /*margin-top: 8px;*/\n      width: 24px;\n      height: 24px;\n      display: block;\n      background: url(" + __webpack_require__(6) + "); }\n    .share_Detail > header div:nth-child(3) ul {\n      position: absolute;\n      right: 0;\n      top: 0;\n      width: 100%; }\n      .share_Detail > header div:nth-child(3) ul li {\n        width: 100%;\n        height: 24px;\n        line-height: 24px;\n        text-align: center;\n        border: 1px solid purple;\n        background-color: #fff;\n        border-radius: 50%; }\n\n.share_Detail > nav {\n  margin-top: 40px;\n  height: 30px;\n  width: 100%;\n  border-bottom: 1px solid #ccc; }\n  .share_Detail > nav span {\n    width: 80px;\n    height: 30px;\n    line-height: 30px;\n    display: block;\n    background: url(" + __webpack_require__(4) + ") no-repeat;\n    text-align: center; }\n\n.share_Detail > main {\n  width: 100%;\n  word-wrap: break-word; }\n  .share_Detail > main > .title {\n    min-height: 0.5rem;\n    border-bottom: 1px solid blue;\n    overflow: hidden;\n    padding: 0 0.1rem; }\n    .share_Detail > main > .title h3 {\n      line-height: 0.4rem;\n      font-size: 0.25rem; }\n    .share_Detail > main > .title span {\n      float: right;\n      margin-right: 0.05rem;\n      color: red;\n      line-height: 0.3rem; }\n  .share_Detail > main > article {\n    /*width: 100%;*/\n    padding: 0.1rem; }\n    .share_Detail > main > article .markdown-text {\n      border-bottom: 1px solid blue; }\n      .share_Detail > main > article .markdown-text table tr {\n        width: 100%; }\n        .share_Detail > main > article .markdown-text table tr td {\n          width: 25%;\n          word-break: break-word; }\n      .share_Detail > main > article .markdown-text p {\n        /*margin:0 0.2rem;*/\n        width: 100%;\n        line-height: 0.25rem;\n        /*text-indent: 0.24rem;*/\n        white-space: normal; }\n        .share_Detail > main > article .markdown-text p a {\n          color: red; }\n      .share_Detail > main > article .markdown-text ul li {\n        font-size: 0.16rem;\n        line-height: 0.3rem;\n        position: relative;\n        text-indent: 0.3rem;\n        border-bottom: 1px dashed #ccc; }\n        .share_Detail > main > article .markdown-text ul li:before {\n          content: '';\n          display: inline-block;\n          width: 30px;\n          height: 30px;\n          position: absolute;\n          left: 0;\n          top: 0.01rem;\n          background: url(" + __webpack_require__(7) + ") no-repeat; }\n      .share_Detail > main > article .markdown-text blockquote {\n        margin: 0; }\n      .share_Detail > main > article .markdown-text h2 {\n        border-top: 1px dashed #ccc;\n        color: red;\n        font-weight: bolder;\n        line-height: 0.3rem; }\n      .share_Detail > main > article .markdown-text img {\n        width: 100%; }\n  .share_Detail > main > .discuss {\n    line-height: 0.3rem;\n    border-bottom: 1px solid #ccc;\n    margin-left: 0.2rem; }\n    .share_Detail > main > .discuss > .discContent {\n      min-height: 0.6rem; }\n      .share_Detail > main > .discuss > .discContent > ul > li {\n        border-bottom: 1px solid #ccc;\n        padding: 0.1rem 0.1rem 0.4rem;\n        position: relative; }\n        .share_Detail > main > .discuss > .discContent > ul > li > .userinfor {\n          float: left;\n          width: 20%;\n          text-align: center; }\n          .share_Detail > main > .discuss > .discContent > ul > li > .userinfor > img {\n            width: 0.5rem;\n            border-radius: 50%; }\n        .share_Detail > main > .discuss > .discContent > ul > li > .content {\n          width: 70%;\n          float: left;\n          word-wrap: break-all;\n          margin-left: 0.2rem;\n          text-align: right; }\n          .share_Detail > main > .discuss > .discContent > ul > li > .content .markdown-text p {\n            line-height: 0.2rem;\n            text-align: left;\n            /*word-wrap:break-all;*/ }\n            .share_Detail > main > .discuss > .discContent > ul > li > .content .markdown-text p a {\n              word-wrap: break-all; }\n          .share_Detail > main > .discuss > .discContent > ul > li > .content img {\n            width: 100%;\n            height: 0.5rem; }\n          .share_Detail > main > .discuss > .discContent > ul > li > .content > i {\n            line-height: 0.3rem;\n            color: red;\n            position: absolute;\n            right: 0.1rem;\n            bottom: 0; }\n", ""]);
+exports.push([module.i, "html,body,h1,h2,h3,h4,h5,h6,ul,li,p{\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n}\r\na{text-decoration: none;}\r\ni{font-style: none;color: red;}\r\nul,li{list-style: none;}\r\nhtml,body{width:100%;color:#5D656B;background-color: #fff;}\r\nhtml{\r\n\tfont-size: 625%;\r\n}\r\nbody{\r\n\tfont-size: 0.12rem;\r\n}\r\nheader{\r\n\tposition: fixed;\r\n\ttop: 0;\r\n\twidth: 100%;\r\n\tdisplay: flex;\r\n\ttext-align: center;\r\n}\r\nbody{\r\n\twidth: 100%;\r\n\t\r\n}\r\n\r\n\r\n.clearfix::before,\r\n.clearfix::after{\r\n\tdisplay:block;\r\n\theight:0;\r\n\tclear:both;\r\n\tcontent: \"\";\r\n\t/*height: 0;*/\r\n\t/*line-height:0;*/\r\n\t/*display: block;*/\r\n\t/*clear: both;*/\r\n\t/*visibility: hidden;*/\r\n}", ""]);
 
 // exports
 
@@ -24987,7 +25302,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\nmain[data-v-34bcadff] {\n  margin-top: 40px;\n  width: 100%;\n}\nmain ul[data-v-34bcadff] {\n    padding: 0.05rem;\n}\nmain ul li[data-v-34bcadff] {\n      max-height: 1rem;\n      padding: 0 10px;\n      border: 1px solid #ccc;\n      overflow: hidden;\n      box-shadow: 0 3px 0 #eee;\n      margin-top: 0.1rem;\n      border-radius: 0.1rem;\n      display: flex;\n}\nmain ul li .userImg[data-v-34bcadff] {\n        width: 15%;\n        margin-top: 0.05rem;\n}\nmain ul li .userImg img[data-v-34bcadff] {\n          width: 0.4rem;\n          height: 0.4rem;\n          border-radius: 50%;\n}\nmain ul li .list_content[data-v-34bcadff] {\n        width: 85%;\n}\nmain ul li .list_content h3[data-v-34bcadff] {\n          font-size: 0.16rem;\n          line-height: 0.3rem;\n          text-indent: 0.05rem;\n          white-space: nowrap;\n          text-overflow: ellipsis;\n          overflow: hidden;\n          font-weight: bolder;\n          position: relative;\n}\nmain ul li .list_content p[data-v-34bcadff] {\n          color: #ccc;\n          max-height: 0.4rem;\n          text-indent: 0.2rem;\n          overflow: hidden;\n          text-overflow: ellipsis;\n          white-space: nowrap;\n}\nmain ul li .list_content span[data-v-34bcadff] {\n          display: inline-block;\n          line-height: 0.18rem;\n          float: right;\n          margin-right: 10px;\n}\n", ""]);
+exports.push([module.i, ".job_Detail > header {\n  height: 40px;\n  width: 100%;\n  display: flex;\n  background-color: purple;\n  position: fixed;\n  z-index: 1000;\n  top: 0;\n  left: 0; }\n  .job_Detail > header div i {\n    margin: 10px auto; }\n  .job_Detail > header div:nth-child(1) {\n    flex: 1;\n    height: 40px;\n    background-color: blueviolet; }\n    .job_Detail > header div:nth-child(1) i {\n      display: block;\n      width: 24px;\n      height: 24px;\n      background: url(" + __webpack_require__(5) + ") no-repeat; }\n  .job_Detail > header div:nth-child(2) {\n    flex: 7.5; }\n  .job_Detail > header div:nth-child(3) {\n    flex: 1.5;\n    position: relative;\n    border-radius: 50%; }\n    .job_Detail > header div:nth-child(3) > i {\n      /*margin-top: 8px;*/\n      width: 24px;\n      height: 24px;\n      display: block;\n      background: url(" + __webpack_require__(6) + "); }\n    .job_Detail > header div:nth-child(3) ul {\n      position: absolute;\n      right: 0;\n      top: 0;\n      width: 100%; }\n      .job_Detail > header div:nth-child(3) ul li {\n        width: 100%;\n        height: 24px;\n        line-height: 24px;\n        text-align: center;\n        border: 1px solid purple;\n        background-color: #fff;\n        border-radius: 50%; }\n\n.job_Detail > nav {\n  margin-top: 40px;\n  height: 30px;\n  width: 100%;\n  border-bottom: 1px solid #ccc; }\n  .job_Detail > nav span {\n    width: 80px;\n    height: 30px;\n    line-height: 30px;\n    display: block;\n    background: url(" + __webpack_require__(4) + ") no-repeat;\n    text-align: center; }\n\n.job_Detail > main {\n  width: 100%;\n  word-wrap: break-word; }\n  .job_Detail > main > .title {\n    min-height: 0.5rem;\n    border-bottom: 1px solid blue;\n    overflow: hidden;\n    padding: 0 0.1rem; }\n    .job_Detail > main > .title h3 {\n      line-height: 0.4rem;\n      font-size: 0.16rem;\n      color: yellowgreen; }\n    .job_Detail > main > .title span {\n      float: right;\n      margin-right: 0.05rem;\n      color: red;\n      line-height: 0.3rem; }\n  .job_Detail > main > article {\n    /*width: 100%;*/\n    padding: 0.1rem; }\n    .job_Detail > main > article .markdown-text {\n      border-bottom: 1px solid blue; }\n      .job_Detail > main > article .markdown-text table tr {\n        width: 100%; }\n        .job_Detail > main > article .markdown-text table tr td {\n          width: 25%;\n          word-break: break-word; }\n      .job_Detail > main > article .markdown-text p {\n        width: 100%;\n        line-height: 0.25rem;\n        /*text-indent: 0.24rem;*/\n        white-space: normal; }\n        .job_Detail > main > article .markdown-text p a {\n          color: red; }\n        .job_Detail > main > article .markdown-text p strong {\n          display: block;\n          font-size: 0.16rem;\n          font-weight: bolder; }\n      .job_Detail > main > article .markdown-text ul li {\n        font-size: 0.16rem;\n        line-height: 0.3rem;\n        position: relative;\n        text-indent: 0.3rem;\n        border-bottom: 1px dashed #ccc; }\n        .job_Detail > main > article .markdown-text ul li:before {\n          content: '';\n          display: inline-block;\n          width: 30px;\n          height: 30px;\n          position: absolute;\n          left: 0;\n          top: 0.01rem;\n          background: url(" + __webpack_require__(7) + ") no-repeat; }\n      .job_Detail > main > article .markdown-text blockquote {\n        margin: 0; }\n      .job_Detail > main > article .markdown-text h2 {\n        border-top: 1px dashed #ccc;\n        color: red;\n        font-weight: bolder;\n        line-height: 0.3rem; }\n      .job_Detail > main > article .markdown-text img {\n        width: 100%; }\n  .job_Detail > main > .discuss {\n    line-height: 0.3rem;\n    border-bottom: 1px solid #ccc;\n    margin-left: 0.2rem; }\n    .job_Detail > main > .discuss > .discContent {\n      min-height: 0.6rem; }\n      .job_Detail > main > .discuss > .discContent > ul > li {\n        border-bottom: 1px solid #ccc;\n        padding: 0.1rem 0.1rem 0.4rem;\n        position: relative; }\n        .job_Detail > main > .discuss > .discContent > ul > li > .userinfor {\n          float: left;\n          width: 20%;\n          text-align: center; }\n          .job_Detail > main > .discuss > .discContent > ul > li > .userinfor > img {\n            width: 0.5rem;\n            border-radius: 50%; }\n        .job_Detail > main > .discuss > .discContent > ul > li > .content {\n          width: 70%;\n          float: left;\n          word-wrap: break-all;\n          margin-left: 0.2rem;\n          text-align: right; }\n          .job_Detail > main > .discuss > .discContent > ul > li > .content .markdown-text p {\n            line-height: 0.2rem;\n            text-align: left;\n            /*word-wrap:break-all;*/ }\n            .job_Detail > main > .discuss > .discContent > ul > li > .content .markdown-text p a {\n              word-wrap: break-all; }\n          .job_Detail > main > .discuss > .discContent > ul > li > .content img {\n            width: 100%; }\n          .job_Detail > main > .discuss > .discContent > ul > li > .content > i {\n            line-height: 0.3rem;\n            color: red;\n            position: absolute;\n            right: 0.1rem;\n            bottom: 0; }\n", ""]);
 
 // exports
 
@@ -25001,7 +25316,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\nmain[data-v-416ac5de] {\n  margin-top: 40px;\n  width: 100%;\n}\nmain ul[data-v-416ac5de] {\n    padding: 0.05rem;\n}\nmain ul li[data-v-416ac5de] {\n      max-height: 1rem;\n      padding: 0 10px;\n      border: 1px solid #ccc;\n      overflow: hidden;\n      box-shadow: 0 3px 0 #eee;\n      margin-top: 0.1rem;\n      border-radius: 0.1rem;\n      display: flex;\n}\nmain ul li .userImg[data-v-416ac5de] {\n        width: 15%;\n        margin-top: 0.05rem;\n}\nmain ul li .userImg img[data-v-416ac5de] {\n          width: 0.4rem;\n          height: 0.4rem;\n          border-radius: 50%;\n}\nmain ul li .list_content[data-v-416ac5de] {\n        width: 85%;\n}\nmain ul li .list_content h3[data-v-416ac5de] {\n          font-size: 0.16rem;\n          line-height: 0.3rem;\n          text-indent: 0.05rem;\n          white-space: nowrap;\n          text-overflow: ellipsis;\n          overflow: hidden;\n          font-weight: bolder;\n          position: relative;\n}\nmain ul li .list_content p[data-v-416ac5de] {\n          color: #ccc;\n          max-height: 0.4rem;\n          text-indent: 0.2rem;\n          overflow: hidden;\n          text-overflow: ellipsis;\n          white-space: nowrap;\n}\nmain ul li .list_content span[data-v-416ac5de] {\n          display: inline-block;\n          line-height: 0.18rem;\n          float: right;\n          margin-right: 10px;\n}\n", ""]);
+exports.push([module.i, ".share_Detail > header {\n  height: 40px;\n  width: 100%;\n  display: flex;\n  background-color: purple;\n  position: fixed;\n  z-index: 1000;\n  top: 0;\n  left: 0; }\n  .share_Detail > header div i {\n    margin: 10px auto; }\n  .share_Detail > header div:nth-child(1) {\n    flex: 1;\n    height: 40px;\n    background-color: blueviolet; }\n    .share_Detail > header div:nth-child(1) i {\n      display: block;\n      width: 24px;\n      height: 24px;\n      background: url(" + __webpack_require__(5) + ") no-repeat; }\n  .share_Detail > header div:nth-child(2) {\n    flex: 7.5; }\n  .share_Detail > header div:nth-child(3) {\n    flex: 1.5;\n    position: relative;\n    border-radius: 50%; }\n    .share_Detail > header div:nth-child(3) > i {\n      /*margin-top: 8px;*/\n      width: 24px;\n      height: 24px;\n      display: block;\n      background: url(" + __webpack_require__(6) + "); }\n    .share_Detail > header div:nth-child(3) ul {\n      position: absolute;\n      right: 0;\n      top: 0;\n      width: 100%; }\n      .share_Detail > header div:nth-child(3) ul li {\n        width: 100%;\n        height: 24px;\n        line-height: 24px;\n        text-align: center;\n        border: 1px solid purple;\n        background-color: #fff;\n        border-radius: 50%; }\n\n.share_Detail > nav {\n  margin-top: 40px;\n  height: 30px;\n  width: 100%;\n  border-bottom: 1px solid #ccc; }\n  .share_Detail > nav span {\n    width: 80px;\n    height: 30px;\n    line-height: 30px;\n    display: block;\n    background: url(" + __webpack_require__(4) + ") no-repeat;\n    text-align: center; }\n\n.share_Detail > main {\n  width: 100%;\n  word-wrap: break-word; }\n  .share_Detail > main > .title {\n    min-height: 0.5rem;\n    border-bottom: 1px solid blue;\n    overflow: hidden;\n    padding: 0 0.1rem; }\n    .share_Detail > main > .title h3 {\n      line-height: 0.4rem;\n      font-size: 0.25rem; }\n    .share_Detail > main > .title span {\n      float: right;\n      margin-right: 0.05rem;\n      color: red;\n      line-height: 0.3rem; }\n  .share_Detail > main > article {\n    /*width: 100%;*/\n    padding: 0.1rem; }\n    .share_Detail > main > article .markdown-text {\n      border-bottom: 1px solid blue; }\n      .share_Detail > main > article .markdown-text table tr {\n        width: 100%; }\n        .share_Detail > main > article .markdown-text table tr td {\n          width: 25%;\n          word-break: break-word; }\n      .share_Detail > main > article .markdown-text p {\n        /*margin:0 0.2rem;*/\n        width: 100%;\n        line-height: 0.25rem;\n        /*text-indent: 0.24rem;*/\n        white-space: normal; }\n        .share_Detail > main > article .markdown-text p a {\n          color: red; }\n      .share_Detail > main > article .markdown-text ul li {\n        font-size: 0.16rem;\n        line-height: 0.3rem;\n        position: relative;\n        text-indent: 0.3rem;\n        border-bottom: 1px dashed #ccc; }\n        .share_Detail > main > article .markdown-text ul li:before {\n          content: '';\n          display: inline-block;\n          width: 30px;\n          height: 30px;\n          position: absolute;\n          left: 0;\n          top: 0.01rem;\n          background: url(" + __webpack_require__(7) + ") no-repeat; }\n      .share_Detail > main > article .markdown-text blockquote {\n        margin: 0; }\n      .share_Detail > main > article .markdown-text h2 {\n        border-top: 1px dashed #ccc;\n        color: red;\n        font-weight: bolder;\n        line-height: 0.3rem; }\n      .share_Detail > main > article .markdown-text img {\n        width: 100%; }\n  .share_Detail > main > .discuss {\n    line-height: 0.3rem;\n    border-bottom: 1px solid #ccc;\n    margin-left: 0.2rem; }\n    .share_Detail > main > .discuss > .discContent {\n      min-height: 0.6rem; }\n      .share_Detail > main > .discuss > .discContent > ul > li {\n        border-bottom: 1px solid #ccc;\n        padding: 0.1rem 0.1rem 0.4rem;\n        position: relative; }\n        .share_Detail > main > .discuss > .discContent > ul > li > .userinfor {\n          float: left;\n          width: 20%;\n          text-align: center; }\n          .share_Detail > main > .discuss > .discContent > ul > li > .userinfor > img {\n            width: 0.5rem;\n            border-radius: 50%; }\n        .share_Detail > main > .discuss > .discContent > ul > li > .content {\n          width: 70%;\n          float: left;\n          word-wrap: break-all;\n          margin-left: 0.2rem;\n          text-align: right; }\n          .share_Detail > main > .discuss > .discContent > ul > li > .content .markdown-text p {\n            line-height: 0.2rem;\n            text-align: left;\n            /*word-wrap:break-all;*/ }\n            .share_Detail > main > .discuss > .discContent > ul > li > .content .markdown-text p a {\n              word-wrap: break-all; }\n          .share_Detail > main > .discuss > .discContent > ul > li > .content img {\n            width: 100%;\n            height: 0.5rem; }\n          .share_Detail > main > .discuss > .discContent > ul > li > .content > i {\n            line-height: 0.3rem;\n            color: red;\n            position: absolute;\n            right: 0.1rem;\n            bottom: 0; }\n", ""]);
 
 // exports
 
@@ -25015,7 +25330,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\nheader[data-v-77b32c50] {\n  /*overflow: hidden;*/\n  height: 40px;\n  background-color: deepskyblue;\n  display: flex;\n  z-index: 1000;\n}\nheader span[data-v-77b32c50] {\n    flex: 1;\n    height: 39px;\n    color: #000;\n    font-size: 0.16rem;\n    line-height: 40px;\n}\nheader div[data-v-77b32c50] {\n    flex: 1;\n    height: 40px;\n}\nheader div:nth-child(1) i[data-v-77b32c50] {\n      background: url(" + __webpack_require__(52) + ") no-repeat;\n}\nheader div:nth-child(1) .left_menu[data-v-77b32c50] {\n      display: flex;\n      width: 100%;\n      position: fixed;\n      left: -100%;\n      top: 0;\n      height: 100%;\n      z-index: 9999;\n}\nheader div:nth-child(1) .left_menu .hasisLeftMenu[data-v-77b32c50] {\n        background: rgba(0, 0, 0, 0.9);\n        height: 100%;\n        flex: 7;\n}\nheader div:nth-child(1) .left_menu .hasisLeftMenu h1[data-v-77b32c50] {\n          text-align: left;\n          padding-left: 0.3rem;\n          line-height: 0.6rem;\n          color: #fff;\n}\nheader div:nth-child(1) .left_menu .hasisLeftMenu .infor[data-v-77b32c50] {\n          margin-top: 0.6rem;\n          display: block;\n}\nheader div:nth-child(1) .left_menu .hasisLeftMenu .infor img[data-v-77b32c50] {\n            width: 0.4rem;\n            height: 0.4rem;\n            border: 1px solid #f00;\n            border-radius: 50%;\n}\nheader div:nth-child(1) .left_menu .hasisLeftMenu .infor > span[data-v-77b32c50] {\n            display: block;\n            color: #fff;\n            font-size: 0.2rem;\n            line-height: 0.3rem;\n            height: 0.3rem;\n}\nheader div:nth-child(1) .left_menu .hasisLeftMenu > .useImg > .hasImg[data-v-77b32c50] {\n          width: 0.4rem;\n          height: 0.15rem;\n          background: #fff;\n          /*margin-top: 0.6rem;*/\n          border-radius: 0.1rem;\n          margin: 0.6rem auto 0;\n          position: relative;\n}\nheader div:nth-child(1) .left_menu .hasisLeftMenu > .useImg > .hasImg > span[data-v-77b32c50] {\n            width: 0.15rem;\n            height: 0.15rem;\n            display: block;\n            background: blue;\n            border-radius: 50%;\n            position: absolute;\n            left: 0;\n            top: 0;\n}\nheader div:nth-child(1) .left_menu .hasisLeftMenu > .useImg > span[data-v-77b32c50] {\n          color: #fff;\n          font-size: 0.14rem;\n}\nheader div:nth-child(1) .left_menu .noisLeftMenu[data-v-77b32c50] {\n        flex: 3;\n        height: 100%;\n        background: #fff;\n        opacity: 0.4;\n}\nheader div[data-v-77b32c50]:nth-child(6) {\n      flex: 1.5;\n      border-radius: 50%;\n      position: relative;\n}\nheader div:nth-child(6) i[data-v-77b32c50] {\n        background: url(" + __webpack_require__(51) + ") no-repeat;\n}\nheader div:nth-child(6) ul[data-v-77b32c50] {\n        width: 100%;\n        position: absolute;\n        top: 40px;\n        right: 0;\n        opacity: 0;\n        z-index: 100000;\n}\nheader div:nth-child(6) ul li[data-v-77b32c50] {\n          width: 100%;\n          height: 30px;\n          line-height: 30px;\n          border: 1px solid deepskyblue;\n          border-radius: 50%;\n          background-color: #fff;\n}\nheader div i[data-v-77b32c50] {\n      margin: auto;\n      width: 24px;\n      height: 24px;\n      display: block;\n      margin-top: 8px;\n      /*\t\t\t\tmargin: 8px 5px 0;*/\n}\nheader .active[data-v-77b32c50] {\n    border-bottom: 1px solid #f00;\n}\nheader .loginBg[data-v-77b32c50] {\n    background-color: #fff;\n    transition: all 1s;\n}\n.loginPage[data-v-77b32c50] {\n  width: 100%;\n  height: 100%;\n  background-color: deepskyblue;\n  position: fixed;\n  top: -100%;\n  right: -100%;\n  z-index: 9999;\n}\n.loginPage .loginTop[data-v-77b32c50] {\n  height: 50px;\n  width: 100%;\n  line-height: 50px;\n  text-align: center;\n  border-bottom: 1px solid #ccc;\n  background-color: #8A2BE2;\n  color: #fff;\n  overflow: hidden;\n  position: fixed;\n  top: 0;\n  left: 0;\n}\n.loginPage .loginInput[data-v-77b32c50] {\n  width: 2rem;\n  height: 40px;\n  margin: 0 auto;\n  margin-top: 150px;\n}\n.loginPage input[data-v-77b32c50] {\n  width: 100%;\n  height: 100%;\n  border-radius: 0.1rem;\n  outline: none;\n}\n.loginPage button[data-v-77b32c50] {\n  margin-top: 0.1rem;\n  width: 30%;\n  height: 0.3rem;\n  margin-left: 0.3rem;\n}\n", ""]);
+exports.push([module.i, "\nmain[data-v-34bcadff] {\n  margin-top: 40px;\n  width: 100%;\n}\nmain ul[data-v-34bcadff] {\n    padding: 0.05rem;\n}\nmain ul li[data-v-34bcadff] {\n      max-height: 1rem;\n      padding: 0 10px;\n      border: 1px solid #ccc;\n      overflow: hidden;\n      box-shadow: 0 3px 0 #eee;\n      margin-top: 0.1rem;\n      border-radius: 0.1rem;\n      display: flex;\n}\nmain ul li .userImg[data-v-34bcadff] {\n        width: 15%;\n        margin-top: 0.05rem;\n}\nmain ul li .userImg img[data-v-34bcadff] {\n          width: 0.4rem;\n          height: 0.4rem;\n          border-radius: 50%;\n}\nmain ul li .list_content[data-v-34bcadff] {\n        width: 85%;\n}\nmain ul li .list_content h3[data-v-34bcadff] {\n          font-size: 0.16rem;\n          line-height: 0.3rem;\n          text-indent: 0.05rem;\n          white-space: nowrap;\n          text-overflow: ellipsis;\n          overflow: hidden;\n          font-weight: bolder;\n          position: relative;\n}\nmain ul li .list_content p[data-v-34bcadff] {\n          color: #ccc;\n          max-height: 0.4rem;\n          text-indent: 0.2rem;\n          overflow: hidden;\n          text-overflow: ellipsis;\n          white-space: nowrap;\n}\nmain ul li .list_content span[data-v-34bcadff] {\n          display: inline-block;\n          line-height: 0.18rem;\n          float: right;\n          margin-right: 10px;\n}\n", ""]);
 
 // exports
 
@@ -25029,7 +25344,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\nmain[data-v-416ac5de] {\n  margin-top: 40px;\n  width: 100%;\n}\nmain ul[data-v-416ac5de] {\n    padding: 0.05rem;\n}\nmain ul li[data-v-416ac5de] {\n      max-height: 1rem;\n      padding: 0 10px;\n      border: 1px solid #ccc;\n      overflow: hidden;\n      box-shadow: 0 3px 0 #eee;\n      margin-top: 0.1rem;\n      border-radius: 0.1rem;\n      display: flex;\n}\nmain ul li .userImg[data-v-416ac5de] {\n        width: 15%;\n        margin-top: 0.05rem;\n}\nmain ul li .userImg img[data-v-416ac5de] {\n          width: 0.4rem;\n          height: 0.4rem;\n          border-radius: 50%;\n}\nmain ul li .list_content[data-v-416ac5de] {\n        width: 85%;\n}\nmain ul li .list_content h3[data-v-416ac5de] {\n          font-size: 0.16rem;\n          line-height: 0.3rem;\n          text-indent: 0.05rem;\n          white-space: nowrap;\n          text-overflow: ellipsis;\n          overflow: hidden;\n          font-weight: bolder;\n          position: relative;\n}\nmain ul li .list_content p[data-v-416ac5de] {\n          color: #ccc;\n          max-height: 0.4rem;\n          text-indent: 0.2rem;\n          overflow: hidden;\n          text-overflow: ellipsis;\n          white-space: nowrap;\n}\nmain ul li .list_content span[data-v-416ac5de] {\n          display: inline-block;\n          line-height: 0.18rem;\n          float: right;\n          margin-right: 10px;\n}\n", ""]);
 
 // exports
 
@@ -25043,7 +25358,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\nmain[data-v-f145a622] {\n  margin-top: 40px;\n  width: 100%;\n}\nmain ul[data-v-f145a622] {\n    padding: 0.05rem;\n}\nmain ul li[data-v-f145a622] {\n      max-height: 1rem;\n      padding: 0 10px;\n      border: 1px solid #ccc;\n      overflow: hidden;\n      box-shadow: 0 3px 0 #eee;\n      margin-top: 0.1rem;\n      border-radius: 0.1rem;\n      display: flex;\n}\nmain ul li .userImg[data-v-f145a622] {\n        width: 15%;\n        margin-top: 0.05rem;\n}\nmain ul li .userImg img[data-v-f145a622] {\n          width: 0.4rem;\n          height: 0.4rem;\n          border-radius: 50%;\n}\nmain ul li .list_content[data-v-f145a622] {\n        width: 85%;\n}\nmain ul li .list_content h3[data-v-f145a622] {\n          font-size: 0.16rem;\n          line-height: 0.3rem;\n          text-indent: 0.05rem;\n          white-space: nowrap;\n          text-overflow: ellipsis;\n          overflow: hidden;\n          font-weight: bolder;\n          position: relative;\n}\nmain ul li .list_content p[data-v-f145a622] {\n          color: #ccc;\n          max-height: 0.4rem;\n          text-indent: 0.2rem;\n          overflow: hidden;\n          text-overflow: ellipsis;\n          white-space: nowrap;\n}\nmain ul li .list_content span[data-v-f145a622] {\n          display: inline-block;\n          line-height: 0.18rem;\n          float: right;\n          margin-right: 10px;\n}\n", ""]);
+exports.push([module.i, "\nheader[data-v-77b32c50] {\n  /*overflow: hidden;*/\n  height: 40px;\n  background-color: deepskyblue;\n  display: flex;\n  z-index: 1000;\n}\nheader span[data-v-77b32c50] {\n    flex: 1;\n    height: 39px;\n    color: #000;\n    font-size: 0.16rem;\n    line-height: 40px;\n}\nheader div[data-v-77b32c50] {\n    flex: 1;\n    height: 40px;\n}\nheader div:nth-child(1) i[data-v-77b32c50] {\n      background: url(" + __webpack_require__(54) + ") no-repeat;\n}\nheader div:nth-child(1) .left_menu[data-v-77b32c50] {\n      display: flex;\n      width: 70%;\n      position: fixed;\n      left: -100%;\n      top: 0;\n      height: 100%;\n      z-index: 9999;\n}\nheader div:nth-child(1) .left_menu .hasisLeftMenu[data-v-77b32c50] {\n        background: rgba(0, 0, 0, 0.9);\n        height: 100%;\n        flex: 7;\n}\nheader div:nth-child(1) .left_menu .hasisLeftMenu h1[data-v-77b32c50] {\n          text-align: left;\n          padding-left: 0.3rem;\n          line-height: 0.6rem;\n          color: #fff;\n}\nheader div:nth-child(1) .left_menu .hasisLeftMenu .infor[data-v-77b32c50] {\n          margin-top: 0.6rem;\n          display: block;\n}\nheader div:nth-child(1) .left_menu .hasisLeftMenu .infor img[data-v-77b32c50] {\n            width: 0.4rem;\n            height: 0.4rem;\n            border: 1px solid #f00;\n            border-radius: 50%;\n}\nheader div:nth-child(1) .left_menu .hasisLeftMenu .infor > span[data-v-77b32c50] {\n            display: block;\n            color: #fff;\n            font-size: 0.2rem;\n            line-height: 0.3rem;\n            height: 0.3rem;\n}\nheader div:nth-child(1) .left_menu .hasisLeftMenu > .useImg > .hasImg[data-v-77b32c50] {\n          width: 0.4rem;\n          height: 0.15rem;\n          background: #fff;\n          /*margin-top: 0.6rem;*/\n          border-radius: 0.1rem;\n          margin: 0.6rem auto 0;\n          position: relative;\n}\nheader div:nth-child(1) .left_menu .hasisLeftMenu > .useImg > .hasImg > span[data-v-77b32c50] {\n            width: 0.15rem;\n            height: 0.15rem;\n            display: block;\n            background: blue;\n            border-radius: 50%;\n            position: absolute;\n            left: 0;\n            top: 0;\n}\nheader div:nth-child(1) .left_menu .hasisLeftMenu > .useImg > span[data-v-77b32c50] {\n          color: #fff;\n          font-size: 0.14rem;\n}\nheader div:nth-child(1) .left_menu .noisLeftMenu[data-v-77b32c50] {\n        flex: 3;\n        height: 100%;\n        background: #fff;\n        opacity: 0.4;\n}\nheader div[data-v-77b32c50]:nth-child(6) {\n      flex: 1.5;\n      border-radius: 50%;\n      position: relative;\n}\nheader div:nth-child(6) i[data-v-77b32c50] {\n        background: url(" + __webpack_require__(53) + ") no-repeat;\n}\nheader div:nth-child(6) ul[data-v-77b32c50] {\n        width: 100%;\n        position: absolute;\n        top: 40px;\n        right: 0;\n        opacity: 0;\n        z-index: 100000;\n}\nheader div:nth-child(6) ul li[data-v-77b32c50] {\n          width: 100%;\n          height: 30px;\n          line-height: 30px;\n          border: 1px solid deepskyblue;\n          border-radius: 50%;\n          background-color: #fff;\n}\nheader div i[data-v-77b32c50] {\n      margin: auto;\n      width: 24px;\n      height: 24px;\n      display: block;\n      margin-top: 8px;\n      /*\t\t\t\tmargin: 8px 5px 0;*/\n}\nheader .active[data-v-77b32c50] {\n    border-bottom: 1px solid #f00;\n}\nheader .loginBg[data-v-77b32c50] {\n    background-color: #fff;\n    transition: all 1s;\n}\n", ""]);
 
 // exports
 
@@ -25057,7 +25372,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.loginPage[data-v-dcb494f0] {\n  width: 100%;\n  height: 100%;\n  background-color: deepskyblue;\n  position: fixed;\n  top: 0;\n  left: 0;\n}\n.loginPage header[data-v-dcb494f0] {\n    height: 50px;\n    width: 100%;\n    border-bottom: 1px solid #ccc;\n    background-color: #8A2BE2;\n    position: fixed;\n    top: 0;\n    left: 0;\n}\n.loginPage header h3[data-v-dcb494f0] {\n      width: 100%;\n      text-align: center;\n      color: #fff;\n      line-height: 50px;\n}\n.loginPage main[data-v-dcb494f0] {\n    width: 100%;\n    height: 100%;\n    background-color: deepskyblue;\n    padding-top: 1.5rem;\n}\n.loginPage main > div[data-v-dcb494f0] {\n      width: 2rem;\n      height: 100%;\n      margin: 0 auto;\n}\n.loginPage main > div input[data-v-dcb494f0] {\n        width: 100%;\n        height: 100%;\n        height: 0.3rem;\n        border-radius: 0.1rem;\n        outline: none;\n}\n.loginPage main > div button[data-v-dcb494f0] {\n        margin-top: 0.1rem;\n        width: 0.6rem;\n        height: 0.3rem;\n        margin-left: 0.3rem;\n}\n", ""]);
 
 // exports
 
@@ -25071,25 +25386,53 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\nmain[data-v-f798dc56] {\n  margin-top: 40px;\n  width: 100%;\n}\nmain ul[data-v-f798dc56] {\n    padding: 0.05rem;\n}\nmain ul li[data-v-f798dc56] {\n      max-height: 1rem;\n      padding: 0 10px;\n      border: 1px solid #ccc;\n      overflow: hidden;\n      box-shadow: 0 3px 0 #eee;\n      margin-top: 0.1rem;\n      border-radius: 0.1rem;\n      display: flex;\n}\nmain ul li .userImg[data-v-f798dc56] {\n        width: 15%;\n        margin-top: 0.05rem;\n}\nmain ul li .userImg img[data-v-f798dc56] {\n          width: 0.4rem;\n          height: 0.4rem;\n          border-radius: 50%;\n}\nmain ul li .list_content[data-v-f798dc56] {\n        width: 85%;\n}\nmain ul li .list_content h3[data-v-f798dc56] {\n          font-size: 0.16rem;\n          line-height: 0.3rem;\n          text-indent: 0.05rem;\n          white-space: nowrap;\n          text-overflow: ellipsis;\n          overflow: hidden;\n          font-weight: bolder;\n          position: relative;\n}\nmain ul li .list_content p[data-v-f798dc56] {\n          color: #aaa;\n          max-height: 0.4rem;\n          text-indent: 0.2rem;\n          overflow: hidden;\n          text-overflow: ellipsis;\n          white-space: nowrap;\n}\nmain ul li .list_content span[data-v-f798dc56] {\n          display: inline-block;\n          line-height: 0.18rem;\n          float: right;\n          margin-right: 10px;\n}\n", ""]);
+exports.push([module.i, "\nmain[data-v-f145a622] {\n  margin-top: 40px;\n  width: 100%;\n}\nmain ul[data-v-f145a622] {\n    padding: 0.05rem;\n}\nmain ul li[data-v-f145a622] {\n      max-height: 1rem;\n      padding: 0 10px;\n      border: 1px solid #ccc;\n      overflow: hidden;\n      box-shadow: 0 3px 0 #eee;\n      margin-top: 0.1rem;\n      border-radius: 0.1rem;\n      display: flex;\n}\nmain ul li .userImg[data-v-f145a622] {\n        width: 15%;\n        margin-top: 0.05rem;\n}\nmain ul li .userImg img[data-v-f145a622] {\n          width: 0.4rem;\n          height: 0.4rem;\n          border-radius: 50%;\n}\nmain ul li .list_content[data-v-f145a622] {\n        width: 85%;\n}\nmain ul li .list_content h3[data-v-f145a622] {\n          font-size: 0.16rem;\n          line-height: 0.3rem;\n          text-indent: 0.05rem;\n          white-space: nowrap;\n          text-overflow: ellipsis;\n          overflow: hidden;\n          font-weight: bolder;\n          position: relative;\n}\nmain ul li .list_content p[data-v-f145a622] {\n          color: #ccc;\n          max-height: 0.4rem;\n          text-indent: 0.2rem;\n          overflow: hidden;\n          text-overflow: ellipsis;\n          white-space: nowrap;\n}\nmain ul li .list_content span[data-v-f145a622] {\n          display: inline-block;\n          line-height: 0.18rem;\n          float: right;\n          margin-right: 10px;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 /* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\nmain[data-v-f798dc56] {\n  margin-top: 40px;\n  width: 100%;\n}\nmain ul[data-v-f798dc56] {\n    padding: 0.05rem;\n}\nmain ul li[data-v-f798dc56] {\n      max-height: 1rem;\n      padding: 0 10px;\n      border: 1px solid #ccc;\n      overflow: hidden;\n      box-shadow: 0 3px 0 #eee;\n      margin-top: 0.1rem;\n      border-radius: 0.1rem;\n      display: flex;\n}\nmain ul li .userImg[data-v-f798dc56] {\n        width: 15%;\n        margin-top: 0.05rem;\n}\nmain ul li .userImg img[data-v-f798dc56] {\n          width: 0.4rem;\n          height: 0.4rem;\n          border-radius: 50%;\n}\nmain ul li .list_content[data-v-f798dc56] {\n        width: 85%;\n}\nmain ul li .list_content h3[data-v-f798dc56] {\n          font-size: 0.16rem;\n          line-height: 0.3rem;\n          text-indent: 0.05rem;\n          white-space: nowrap;\n          text-overflow: ellipsis;\n          overflow: hidden;\n          font-weight: bolder;\n          position: relative;\n}\nmain ul li .list_content p[data-v-f798dc56] {\n          color: #aaa;\n          max-height: 0.4rem;\n          text-indent: 0.2rem;\n          overflow: hidden;\n          text-overflow: ellipsis;\n          white-space: nowrap;\n}\nmain ul li .list_content span[data-v-f798dc56] {\n          display: inline-block;\n          line-height: 0.18rem;\n          float: right;\n          margin-right: 10px;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 53 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABJklEQVRIS7WUDQ3CQAyFmQMkzAFImANAAZMADsABDsAB4GASwMEk4AD6Jb3kMtjaha7J5ZLd9n76uitmE1cxAr+Ud1f6/l321vOtl2ApYDdZFwWtZV/LelgkXgLAT7IaBaxk3ynJIIeXAKW4yOvXsy8yLwGtARAXFOohpFUhDuaCQpveioYwMnhFESSc1CYz3PSBt0WW0N7zMQQHQdkqEpkcPaxeAsBLDRdcws5D/9sBYFUWagqdZyFT1HSmBje0KYyAuece2qvcs2bA6IY4AIS5h4giAxOcF70hW0J7z8cQEOxCkZ6ym3/xGAeESksaJaBdBNxa1rwOutd1rZlANFheApTiIi/c4CKEYHIHqEfxVeVuojMAlymiJUwPV0foFFmt7j3/AIoKNBk02ffTAAAAAElFTkSuQmCC"
 
 /***/ }),
-/* 52 */
+/* 54 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAADD0lEQVRIS5WVSWhTURSGm8EEJWpFUEGhTlA3DSo4IEJGshBx6MZha604IAVdCNadVAUXUhfigAtFLaKICEJM0kTaggiKFOlCadVFVxERrErJ5HfKe/Hmvpu0eXC5753pP+c/99znamniyWazPZVKpQOXp9Fo9OVcXF2NjFKpVKfH47nrcrkC2JXZC+Vy+S/7Ar597GUAJ3nfFIlEfppi1QUg2zwOrQS4RbYnTc6ZTKbN7XY/QxdkDQMS1u0cAGTdQdYfyG5IdwB0NQHirCd6xuh+IS8hb1VBHACDg4NFAC6FQqELtqFwz/th1gTAQWjKs/v5PkvAYcVuDPnKcDi82JbVABBIePyE01bFqUuyRnZQzSydTgeh5zZgR+Px+KhiL5W8s6uvAhD8PHz3wvd8NRAVvSarvaYmWpUF0F20fay+jCPziqwKkMvlpovF4mmyuakCECRnap7YoJOqdqI/pfmMkayHZNtnADCUxuQxnKefAnSvkHWj+2rQSW9a0F1TdVIFVY8D4LUBchi0YbjGEOQysimVBoXvAd5foHtg8CsKTTbAWyuTanOVIG8w3K4HsCqXA7DCBE7vpjkAW2YA4H8SzqTze/RAGPZT7ii6O4YsB/C7Z7o2ZC7Q9dkVvLcq2GwIItP8XD9JBOhCTuyozIfjkQoQ7lcBFpHl+jpUOJoJgPB/ztR8i77/PZCuM72fmUBfEwB1e+MAEIFcEZS8LhaLfbNBkO2Cmm7kS5BdUbmmgl5ku1kfS6VSvzbNKblSSHi5OsmPCRQjyFK5BqjoKs4/cO5TnQ2HQJKQ/8R39hMy8Rwa3EprJVn9LpL7/hF3zAYMzhB4yERZHRoPID8CSDsxZIpXiV0NQDKZ3OHz+UYKhUJnIpGQe76pB0ozJAczYY/t6LiuoecY9NygguP6vdQIjeAjZL+N7Gv6aPyjSSV+vz8Lr39w2Kg2XgeRhLxe73Wx1X82DooMQ3Yfx0OW/Av7b9YUK0C2y9hlFai2p161DX/6NqA1Jw8BW4hM7nk50hM0ct9sTZoTwGxBGun/ARCurMGJe52+AAAAAElFTkSuQmCC"
 
 /***/ }),
-/* 53 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -25133,7 +25476,7 @@ if (false) {
 }
 
 /***/ }),
-/* 54 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -25177,7 +25520,7 @@ if (false) {
 }
 
 /***/ }),
-/* 55 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -25213,7 +25556,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       name: "Ul",
       rawName: "v-Ul"
     }]
-  }, [_c('li', [_vm._v(_vm._s(_vm.loginVal))])])])]), _vm._v(" "), _c('nav', [_c('span', {
+  }, [_c('li', {
+    on: {
+      "click": function($event) {
+        _vm.toLogin()
+      }
+    }
+  }, [_vm._v(_vm._s(_vm.loginVal))])])])]), _vm._v(" "), _c('nav', [_c('span', {
     directives: [{
       name: "areaTips",
       rawName: "v-areaTips"
@@ -25258,12 +25607,20 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       domProps: {
         "innerHTML": _vm._s(dis.content)
       }
-    }), _vm._v(" "), _c('i', {
+    }), _vm._v(" "), _c('div', {
+      staticClass: "sendtime"
+    }, [_c('i', {
+      on: {
+        "click": function($event) {
+          _vm.zan()
+        }
+      }
+    }, [_vm._v("赞")]), _vm._v(" "), _c('i', {
       directives: [{
         name: "times",
         rawName: "v-times"
       }]
-    }, [_vm._v("时间:" + _vm._s(dis.create_at))])])])
+    }, [_vm._v("时间:" + _vm._s(dis.create_at))])])])])
   }))])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('span')])
@@ -25281,7 +25638,7 @@ if (false) {
 }
 
 /***/ }),
-/* 56 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -25300,10 +25657,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "infor"
   }, [_c('img', {
     attrs: {
-      "src": "image/icon/icon-wujiaoxing.png",
+      "src": _vm.userImg,
       "alt": ""
     }
-  }), _vm._v(" "), _c('span', [_vm._v(_vm._s(_vm.name))])]), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), _c('span', [_vm._v(_vm._s(_vm.username))])]), _vm._v(" "), _c('div', {
     staticClass: "useImg"
   }, [_c('div', {
     staticClass: "hasImg",
@@ -25315,6 +25672,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('span')]), _vm._v(" "), _c('span', [_vm._v("省流量")])]), _vm._v(" "), _c('div', {
     staticClass: "list"
   })]), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.isnoisLeftMenu),
+      expression: "isnoisLeftMenu"
+    }],
     staticClass: "noisLeftMenu",
     on: {
       "click": function($event) {
@@ -25345,42 +25708,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.toLogin()
       }
     }
-  }, [_vm._v(_vm._s(_vm.loginVal))])])])]), _vm._v(" "), _c('div', {
-    staticClass: "loginPage"
-  }, [_c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.isLoginPage),
-      expression: "isLoginPage"
-    }],
-    staticClass: "loginTop"
-  }, [_c('h3', [_vm._v("登录页面")])]), _vm._v(" "), _c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.isLoginPage),
-      expression: "isLoginPage"
-    }],
-    staticClass: "loginInput"
-  }, [_c('input', {
-    attrs: {
-      "type": "text"
-    }
-  }), _vm._v(" "), _c('button', {
-    attrs: {
-      "id": "btnLogin"
-    }
-  }, [_vm._v("登录")]), _vm._v(" "), _c('button', {
-    attrs: {
-      "id": "exitbtn"
-    },
-    on: {
-      "click": function($event) {
-        _vm.exitbtn()
-      }
-    }
-  }, [_vm._v("取消")])])]), _vm._v(" "), _c('router-view')], 1)
+  }, [_vm._v(_vm._s(_vm.loginVal))])])])]), _vm._v(" "), _c('router-view')], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -25391,7 +25719,7 @@ if (false) {
 }
 
 /***/ }),
-/* 57 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -25427,7 +25755,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       name: "Ul",
       rawName: "v-Ul"
     }]
-  }, [_c('li', [_vm._v(_vm._s(_vm.loginVal))])])])]), _vm._v(" "), _c('nav', [_c('span', {
+  }, [_c('li', {
+    on: {
+      "click": function($event) {
+        _vm.toLogin()
+      }
+    }
+  }, [_vm._v(_vm._s(_vm.loginVal))])])])]), _vm._v(" "), _c('nav', [_c('span', {
     directives: [{
       name: "areaTips",
       rawName: "v-areaTips"
@@ -25476,13 +25810,40 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       domProps: {
         "innerHTML": _vm._s(dis.content)
       }
-    }), _vm._v(" "), _c('i', {
+    }), _vm._v(" "), _c('div', {
+      staticClass: "sendtime"
+    }, [_c('i', [_vm._v("赞" + _vm._s(dis.ups.length))]), _vm._v(" "), _c('i', {
       directives: [{
         name: "times",
         rawName: "v-times"
       }]
-    }, [_vm._v("时间:" + _vm._s(dis.create_at))])])])
-  }))])])])])
+    }, [_vm._v("时间:" + _vm._s(dis.create_at))])])])])
+  }))])])]), _vm._v(" "), _c('footer', [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.messageCont),
+      expression: "messageCont"
+    }],
+    attrs: {
+      "type": "text"
+    },
+    domProps: {
+      "value": (_vm.messageCont)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.messageCont = $event.target.value
+      }
+    }
+  }), _vm._v(" "), _c('span', {
+    on: {
+      "click": function($event) {
+        _vm.sendMessage()
+      }
+    }
+  }, [_vm._v("回复")])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('span', [_vm._v("发表时间："), _c('i', {
     staticClass: "timess"
@@ -25497,7 +25858,7 @@ if (false) {
 }
 
 /***/ }),
-/* 58 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -25533,7 +25894,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       name: "Ul",
       rawName: "v-Ul"
     }]
-  }, [_c('li', [_vm._v(_vm._s(_vm.loginVal))])])])]), _vm._v(" "), _c('nav', [_c('span', {
+  }, [_c('li', {
+    on: {
+      "click": function($event) {
+        _vm.toLogin()
+      }
+    }
+  }, [_vm._v(_vm._s(_vm.loginVal))])])])]), _vm._v(" "), _c('nav', [_c('span', {
     directives: [{
       name: "areaTips",
       rawName: "v-areaTips"
@@ -25578,12 +25945,20 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       domProps: {
         "innerHTML": _vm._s(dis.content)
       }
-    }), _vm._v(" "), _c('i', {
+    }), _vm._v(" "), _c('div', {
+      staticClass: "sendtime"
+    }, [_c('i', {
+      on: {
+        "click": function($event) {
+          _vm.zan()
+        }
+      }
+    }, [_vm._v("赞")]), _vm._v(" "), _c('i', {
       directives: [{
         name: "times",
         rawName: "v-times"
       }]
-    }, [_vm._v("时间:" + _vm._s(dis.create_at))])])])
+    }, [_vm._v("时间:" + _vm._s(dis.create_at))])])])])
   }))])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('span')])
@@ -25601,7 +25976,63 @@ if (false) {
 }
 
 /***/ }),
-/* 59 */
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('div', {
+    staticClass: "loginPage"
+  }, [_vm._m(0), _vm._v(" "), _c('main', [_c('div', [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.userKey),
+      expression: "userKey"
+    }],
+    attrs: {
+      "type": "text"
+    },
+    domProps: {
+      "value": (_vm.userKey)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.userKey = $event.target.value
+      }
+    }
+  }), _vm._v(" "), _c('button', {
+    attrs: {
+      "id": "btnLogin"
+    },
+    on: {
+      "click": function($event) {
+        _vm.btnLogin()
+      }
+    }
+  }, [_vm._v("登录")]), _vm._v(" "), _c('button', {
+    attrs: {
+      "id": "exitbtn"
+    },
+    on: {
+      "click": function($event) {
+        _vm.exitbtn()
+      }
+    }
+  }, [_vm._v("取消")])])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('header', [_c('h3', [_vm._v("登录页面")])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-dcb494f0", module.exports)
+  }
+}
+
+/***/ }),
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -25645,7 +26076,7 @@ if (false) {
 }
 
 /***/ }),
-/* 60 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -25681,7 +26112,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       name: "Ul",
       rawName: "v-Ul"
     }]
-  }, [_c('li', [_vm._v(_vm._s(_vm.loginVal))])])])]), _vm._v(" "), _c('nav', [_c('span', {
+  }, [_c('li', {
+    on: {
+      "click": function($event) {
+        _vm.toLogin()
+      }
+    }
+  }, [_vm._v(_vm._s(_vm.loginVal))])])])]), _vm._v(" "), _c('nav', [_c('span', {
     directives: [{
       name: "areaTips",
       rawName: "v-areaTips"
@@ -25731,19 +26168,23 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }), _vm._v(" "), _c('span', [_vm._v(_vm._s(dis.author.loginname))])]), _vm._v(" "), _c('div', {
       staticClass: "content"
     }, [_c('div', {
-      directives: [{
-        name: "allA",
-        rawName: "v-allA"
-      }],
       domProps: {
         "innerHTML": _vm._s(dis.content)
       }
-    }), _vm._v(" "), _c('i', {
+    }), _vm._v(" "), _c('div', {
+      staticClass: "sendtime"
+    }, [_c('i', {
+      on: {
+        "click": function($event) {
+          _vm.zan()
+        }
+      }
+    }, [_vm._v("赞")]), _vm._v(" "), _c('i', {
       directives: [{
         name: "times",
         rawName: "v-times"
       }]
-    }, [_vm._v("时间:" + _vm._s(dis.create_at))])])])
+    }, [_vm._v("时间:" + _vm._s(dis.create_at))])])])])
   }))])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('span', [_vm._v("发表时间："), _c('i', {
@@ -25759,7 +26200,7 @@ if (false) {
 }
 
 /***/ }),
-/* 61 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -25803,13 +26244,13 @@ if (false) {
 }
 
 /***/ }),
-/* 62 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(44);
+var content = __webpack_require__(46);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -25829,13 +26270,13 @@ if(false) {
 }
 
 /***/ }),
-/* 63 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(45);
+var content = __webpack_require__(47);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -25855,13 +26296,13 @@ if(false) {
 }
 
 /***/ }),
-/* 64 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(46);
+var content = __webpack_require__(48);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -25881,23 +26322,23 @@ if(false) {
 }
 
 /***/ }),
-/* 65 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(47);
+var content = __webpack_require__(49);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(2)("67de396c", content, false);
+var update = __webpack_require__(2)("e542f6d2", content, false);
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../node_modules/._css-loader@0.28.1@css-loader/index.js!../node_modules/._vue-loader@12.1.0@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-b0524f30\",\"scoped\":false,\"hasInlineConfig\":false}!../node_modules/._vue-loader@12.1.0@vue-loader/lib/selector.js?type=styles&index=0!./ask_Detail.vue", function() {
-     var newContent = require("!!../node_modules/._css-loader@0.28.1@css-loader/index.js!../node_modules/._vue-loader@12.1.0@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-b0524f30\",\"scoped\":false,\"hasInlineConfig\":false}!../node_modules/._vue-loader@12.1.0@vue-loader/lib/selector.js?type=styles&index=0!./ask_Detail.vue");
+   module.hot.accept("!!../node_modules/._css-loader@0.28.1@css-loader/index.js!../node_modules/._vue-loader@12.1.0@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-dcb494f0\",\"scoped\":true,\"hasInlineConfig\":false}!../node_modules/._sass-loader@6.0.5@sass-loader/lib/loader.js!../node_modules/._vue-loader@12.1.0@vue-loader/lib/selector.js?type=styles&index=0!./login.vue", function() {
+     var newContent = require("!!../node_modules/._css-loader@0.28.1@css-loader/index.js!../node_modules/._vue-loader@12.1.0@vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-dcb494f0\",\"scoped\":true,\"hasInlineConfig\":false}!../node_modules/._sass-loader@6.0.5@sass-loader/lib/loader.js!../node_modules/._vue-loader@12.1.0@vue-loader/lib/selector.js?type=styles&index=0!./login.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -25907,13 +26348,13 @@ if(false) {
 }
 
 /***/ }),
-/* 66 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(48);
+var content = __webpack_require__(50);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -25933,13 +26374,13 @@ if(false) {
 }
 
 /***/ }),
-/* 67 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(49);
+var content = __webpack_require__(51);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -25959,13 +26400,13 @@ if(false) {
 }
 
 /***/ }),
-/* 68 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(50);
+var content = __webpack_require__(52);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM

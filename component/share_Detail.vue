@@ -9,8 +9,7 @@
 			<div  :class="{loginBg:isLogin}">
 				<i @click="login(2)" class="icon icon-loginMenu"></i>
 				<ul v-show="isLogin" v-Ul>
-					<li>{{loginVal}}</li>
-
+					<li @click="toLogin()">{{loginVal}}</li>
 				</ul>
 			</div>
 			
@@ -38,8 +37,11 @@
 								<span>{{dis.author.loginname}}</span>
 							</div>
 							<div class="content">
-								<div v-html="dis.content" v-allA></div>
-								<i v-times>时间:{{dis.create_at}}</i>
+								<div v-html="dis.content"></div>
+								<div class="sendtime">
+									<i @click="zan()">赞</i>
+									<i v-times>时间:{{dis.create_at}}</i>
+								</div>
 							</div>
 						</li>
 					</ul>
@@ -79,6 +81,38 @@
 				var hrefs = location.hash.split('/')[1].substr(0,5);
 				window.location.href="#/xmain/"+hrefs+"_list"
 			},
+			zan(){
+				var cookie = document.cookie.split('; ')
+				if(cookie[1]){
+					console.log(666)
+				}else{
+					alert('请登录')
+				}
+			},
+			toLogin(){
+				if(this.loginVal == '登录'){
+					this.isLogin= false;
+					window.location.href="#/login"
+				}else if(this.loginVal == '退出'){
+					$.ajax({
+						url:'https://cnodejs.org/api/v1/accesstoken',
+						type:'POST',
+						data:{
+							accesstoken : '28a0473d-7bed-48a1-a6a6-840afd389ddf'
+						},
+						success(data){
+//							console.log(data)
+							var now = new Date();
+							now.setDate(now.getDate()-1);
+							document.cookie = 'username='+data.loginname+';expires='+now;
+							document.cookie = 'userid='+data.id+';expires='+now;
+							document.cookie = 'userImg='+data.avatar_url+';expires='+now;
+							self.userKey = '';
+							location.reload()
+						}
+					})
+				}
+			}
 		},
 		mounted(){
 			var self = this;
@@ -103,9 +137,13 @@
 					
 				}
 			})
-			console.log($('.area'))
+//			console.log($('.area'))
 			if(this.getIsImg){
 				this.getIsImg = false;
+			}
+			var cookie = document.cookie.split('; ')
+			if(cookie[1]){
+				self.loginVal = '退出'
 			}
 			
 
@@ -162,11 +200,6 @@
 					})
 				
 			},
-			allA:{
-				bind(el){
-//					console.log($(el).children('.markdown-text').children('p').html())
-				}
-			}
 		}
 	}
 </script>

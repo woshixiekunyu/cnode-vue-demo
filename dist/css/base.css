@@ -3,7 +3,7 @@ html,body,h1,h2,h3,h4,h5,h6,ul,li,p{
 	padding: 0;
 }
 a{text-decoration: none;}
-i{font-style: none;}
+i{font-style: none;color: red;}
 ul,li{list-style: none;}
 html,body{width:100%;color:#5D656B;background-color: #fff;}
 html{

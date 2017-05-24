@@ -9,7 +9,7 @@
 			<div  :class="{loginBg:isLogin}">
 				<i @click="login(2)" class="icon icon-loginMenu"></i>
 				<ul v-show="isLogin" v-Ul>
-					<li>{{loginVal}}</li>
+					<li @click="toLogin()">{{loginVal}}</li>
 
 				</ul>
 			</div>
@@ -39,13 +39,22 @@
 							</div>
 							<div class="content">
 								<span v-html="dis.content"></span>
-								<i v-times>时间:{{dis.create_at}}</i>
+								<div class="sendtime">
+									<i>赞{{dis.ups.length}}</i>
+									<i v-times>时间:{{dis.create_at}}</i>
+								</div>
+								
 							</div>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</main>
+		
+		<footer>
+			<input type="text" v-model="messageCont"/>
+			<span @click="sendMessage()">回复</span>
+		</footer>
 	</div>
 </template>
 
@@ -62,10 +71,38 @@
 				author:'',
 				discContent:'',
 				disTime:'',
-				disnum:0
+				disnum:0,
+				messageCont:''
 			}
 		},
 		methods:{
+			sendMessage(){
+				var id = window.location.hash.split('/')[2]
+				console.log(id)
+				var self = this;
+				var cookie = document.cookie.split('; ')
+				
+				if(cookie[1]){
+					if(self.messageCont == ''){
+						alert('请输出内容')
+						return;
+					}
+					$.ajax({
+						
+						url:'https://cnodejs.org/api/v1/topic/'+id+'/replies',
+						type:'POST',
+						data:{
+							accesstoken : '28a0473d-7bed-48a1-a6a6-840afd389ddf',
+							content : self.messageCont,
+							success(data){
+								self.messageCont = '';
+							}
+						}
+					})
+				}else{
+					alert('请登录')
+				}
+			},
 			login(){
 				this.isLogin = !this.isLogin
 			},
@@ -74,6 +111,48 @@
 				var hrefs = location.hash.split('/')[1].substr(0,3);
 				window.location.href="#/xmain/"+hrefs+"_list"
 			},
+//			zan(id){
+//				var self = this;
+//				var cookie = document.cookie.split('; ')
+//				if(cookie[1]){
+//					$.ajax({
+//						url:'https://cnodejs.org/api/reply/'+id+'/ups',
+//						type:'POST',
+//						data:{
+//							accesstoken :'28a0473d-7bed-48a1-a6a6-840afd389ddf'
+//						},
+//						success(data){
+//							console.log(data)
+//						}
+//					})
+//				}else{
+//					alert('请登录')
+//				}
+//			},
+			toLogin(){
+				if(this.loginVal == '登录'){
+					this.isLogin= false;
+					window.location.href="#/login"
+				}else if(this.loginVal == '退出'){
+					$.ajax({
+						url:'https://cnodejs.org/api/v1/accesstoken',
+						type:'POST',
+						data:{
+							accesstoken : '28a0473d-7bed-48a1-a6a6-840afd389ddf'
+						},
+						success(data){
+							console.log(data)
+							var now = new Date();
+							now.setDate(now.getDate()-1);
+							document.cookie = 'username='+data.loginname+';expires='+now;
+							document.cookie = 'userid='+data.id+';expires='+now;
+							document.cookie = 'userImg='+data.avatar_url+';expires='+now;
+							self.userKey = '';
+							location.reload()
+						}
+					})
+				}
+			}
 		},
 		computed:{
 			getIsImg:function(){
@@ -103,11 +182,14 @@
 					if(data.data.replies.length>0){
 						self.disnum = self.discContent.length
 					}
-//					self.disnum = self.disContent.length
+//					self.reply = data.data.replies
 				}
 			})
-			console.log($('.area'))
-			
+//			console.log($('.area'))
+			var cookie = document.cookie.split('; ')
+			if(cookie[1]){
+				self.loginVal = '退出'
+			}
 			
 
 		},
@@ -150,6 +232,3 @@
 		}
 	}
 </script>
-<style>
-	
-</style>

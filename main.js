@@ -18,6 +18,7 @@ require('./dist/css/job_Detail.scss');
 import VueRouter from 'vue-router';
 Vue.use(VueRouter)
 var xmain = require('./component/xmain.vue')
+var login = require('./component/login.vue')
 var ask_list = require('./component/ask_list.vue')
 var share_list = require('./component/share_list.vue')
 var job_list = require('./component/job_list.vue')
@@ -80,6 +81,10 @@ var router = new VueRouter({
 		},{
 			path:'/good_Detail/:id',
 			component:good_Detail
+			
+		},{
+			path:'/login',
+			component:login,
 			
 		},{
 			path:'/',

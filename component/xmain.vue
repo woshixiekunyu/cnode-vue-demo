@@ -7,8 +7,8 @@
 					<div class="hasisLeftMenu">
 						<h1>用户</h1>
 						<div class="infor">
-							<img src="image/icon/icon-wujiaoxing.png" alt="" />
-							<span>{{name}}</span>
+							<img :src="userImg" alt="" />
+							<span>{{username}}</span>
 						</div>
 						<div class="useImg">
 							<div class="hasImg" @click="isHasImg()">
@@ -20,7 +20,7 @@
 							
 						</div>
 					</div>
-					<div class="noisLeftMenu" @click="noisLeftMenu()"></div>
+					<div class="noisLeftMenu" @click="noisLeftMenu()" v-show="isnoisLeftMenu"></div>
 				</div>
 				
 			</div>
@@ -36,16 +36,7 @@
 			</div>
 			
 		</header>
-		<div class="loginPage">
-				<div class="loginTop" v-show="isLoginPage">
-					<h3>登录页面</h3>
-				</div>
-				<div class="loginInput" v-show="isLoginPage">
-					<input type="text" />
-					<button id="btnLogin">登录</button>
-					<button id="exitbtn" @click="exitbtn()">取消</button>
-				</div>
-			</div>
+		
 		<router-view></router-view>
 	</div>
 </template>
@@ -56,10 +47,12 @@
 			return {
 				loginVal:'登录',
 				isLogin:false,
-				name:'谢',
+				username:'游客',
 				isImg:true,
 				num:0,
-				isLoginPage:false
+				isnoisLeftMenu:false,
+				userImg:'',
+				userid:''
 			}
 		},
 		computed:{
@@ -81,11 +74,14 @@
 							this.num = 1;
 							clearInterval(timer)
 						}
-						console.log(this.num)
+//						console.log(this.num)
 						$('header div').eq(8).children('ul').animate({'opacity':this.num})
 					}.bind(this),0)
 				}else if(num==1){
-					$('.left_menu').animate({'left':0},500)
+					$('.left_menu').animate({'left':0},500,function(){
+						this.isnoisLeftMenu = true;
+						$('.left_menu').css('width','100%')
+					}.bind(this))
 					
 				}
 			},
@@ -111,28 +107,43 @@
 				}
 			},
 			noisLeftMenu(){
-				$('.left_menu').animate({'left':"-100%"},500)
-			},
-			exitbtn(){
-				this.isLoginPage = false;
-				$('.loginPage').animate({'right':'-100%','top':'-100%'},1000);
+				this.isnoisLeftMenu = false;
+				$('.left_menu').css('width','70%')
+				$('.left_menu').animate({'left':"-100%"},300)
 			},
 			toLogin(){
-				this.isLogin = false;
-				$('.loginPage').animate({'right':0,'top':0},1000,function(){
-
-					this.isLoginPage = true;
-				}.bind(this));
-
-					
+				if(this.loginVal == '登录'){
+					this.isLogin= false;
+					window.location.href="#/login"
+				}else if(this.loginVal == '退出'){
+					$.ajax({
+						url:'https://cnodejs.org/api/v1/accesstoken',
+						type:'POST',
+						data:{
+							accesstoken : '28a0473d-7bed-48a1-a6a6-840afd389ddf'
+						},
+						success(data){
+							console.log(data)
+							var now = new Date();
+							now.setDate(now.getDate()-1);
+							document.cookie = 'username='+data.loginname+';expires='+now;
+							document.cookie = 'userid='+data.id+';expires='+now;
+							document.cookie = 'userImg='+data.avatar_url+';expires='+now;
+							self.userKey = '';
+							location.reload()
+						}
+					})
+				}
 				
-			}
+				
+			},
 			
 		},
 		mounted(){
 
 			var self = this;
 			var tabArr = ['ask','share','job','good']
+//			绑定点击事件
 			$('header').on('click','span',function(){
 				
 				$(this).addClass('active').siblings().removeClass('active').fadeToggle('fast','swing');
@@ -145,6 +156,8 @@
 
 			});
 //			console.log(window.location.hash.split('/')[2])
+
+			//判断选项卡页面并高粱
 			if(window.location.hash.split('/')[2] == 'ask_list'){
 				$('header>span').eq(0).addClass('active').siblings().removeClass('active').fadeToggle('fast','swing')
 			}else if(window.location.hash.split('/')[2] == 'share_list'){
@@ -160,28 +173,45 @@
 			})
 			$('header>div').eq(6).children('ul').css('top',40)
 
-
+			//页面刷新时获取是否无图的cookie
 			var isHasaImg;
 			var cookie = document.cookie.split('; ');
+//			console.log(cookie[2].slice(8,))
 			cookie.forEach(function(item){
 				var arr = item.split('=');
+//				console.log(arr)
 				if(arr[0] == 'isImg'){
 					isHasaImg = arr[1]
+				}//获取user信息
+				else if(arr[0] == 'userid'){
+					self.userid= arr[1]
+				}else if(arr[0] == 'username'){
+					self.username = arr[1]
 				}
 			});
+			console.log(cookie)
+			if(cookie[1]){
+				self.userImg = cookie[3].slice(8,)
+			}
+//			console.log(isHasaImg,self.userid,self.username,self.userImg)
+//			判断是否登陆,更改为退出
+			if(self.userid){
+				self.loginVal = '退出'
+			}
 			if(isHasaImg == 'true'){
-				console.log(isHasaImg)
+//				console.log(isHasaImg)
 				$('.left_menu').children('.hasisLeftMenu').children('.useImg').children('.hasImg').css('backgroundColor','green')
 				.children('span').css('left','0.25rem');
 				this.$store.commit('getIsImg',true)
 			}else{
-				console.log(isHasaImg)
+//				console.log(isHasaImg)
 				$('.left_menu').children('.hasisLeftMenu').children('.useImg').children('.hasImg').css('backgroundColor','')
 				.children('span').css('left','0');
 				this.$store.commit('getIsImg',false)
 			}
 			
-			
+		
+
 		}
 	}
 </script>
@@ -209,7 +239,7 @@
 				i{background: url('image/icon/icon-userMenu.png') no-repeat;}
 				.left_menu{
 					display: flex;
-					width: 100%;
+					width: 70%;
 					position: fixed;
 					left: -100%;
 					top: 0;
@@ -321,47 +351,6 @@
 		}
 		
 	}
-	.loginPage{
-		width: 100%;
-		height: 100%;
-		background-color: deepskyblue;
-		position: fixed;
-		top: -100%;
-		right: -100%;
-		z-index: 9999;
-	}
-	.loginPage .loginTop{
-		height: 50px;
-		width: 100%;
-		line-height: 50px;
-		text-align: center;
-		border-bottom: 1px solid #ccc;
-		background-color: #8A2BE2;
-		color:#fff;
-		overflow: hidden;
-		position: fixed;
-		top: 0;
-		left: 0;
-	}
 	
-	.loginPage .loginInput{
-		width: 2rem;
-		height: 40px;
-		margin: 0 auto;
-		margin-top: 150px;
-	}
-	.loginPage input{
-		width: 100%;
-		height: 100%;
-		border-radius: 0.1rem;
-		outline: none;
-		
-	}
-	.loginPage button{
-		margin-top: 0.1rem;
-		width: 30%;
-		height: 0.3rem;
-		margin-left: 0.3rem;
-	}
 	
 </style>
